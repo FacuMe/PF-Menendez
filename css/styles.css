@@ -37,6 +37,34 @@ ul {
    .................................
 */
 
+/* Grid */
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+} 
+
 /* nav */
 
 nav {
@@ -154,6 +182,36 @@ footer {
     color: #587083a8;
 }
 
+/* sections title */
+
+.title-container {
+    background-color: #93c7ef;
+    color: white;
+    font-size: calc(1.5rem + 1vw);
+    position: relative;
+    background-image: url(../img/sections-banner.jpg);
+    background-position: center right;
+}
+
+.title-container .title {
+    position: relative;
+}
+
+.title h2 {
+    font-size: calc(2rem + 1vw);
+    letter-spacing: .2rem;
+}
+
+.sections-overlay {
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: #7cc5fc;
+    position: absolute;
+    opacity: 0.3;
+}
+
 
 /* :.............................
 
@@ -161,35 +219,6 @@ footer {
 
     .............................
 */
-
-/* Index Grid */
-.index-body {
-    display: grid;
-    grid-template-areas: 
-    "index-nav"
-    "index-header"
-    "index-main"
-    "index-footer";
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: auto;
-}
-
-.index-nav {
-    grid-area: index-nav;
-}
-
-.index-header {
-    grid-area: index-header;
-}
-
-.index-main {
-    grid-area: index-main;
-}
-
-.index-footer {
-    grid-area: index-footer;
-} 
-
 
 /* Index Wapp Banner */
 
@@ -442,64 +471,6 @@ footer {
     .............................
 */
 
-/* products.html Grid */
-.product-body {
-    display: grid;
-    grid-template-areas: 
-    "product-nav"
-    "product-header"
-    "product-main"
-    "product-footer";
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: auto;
-}
-
-.product-nav {
-    grid-area: product-nav;
-}
-
-.product-header {
-    grid-area: product-header;
-}
-
-.product-main {
-    grid-area: product-main;
-}
-
-.product-footer {
-    grid-area: product-footer;
-} 
-
-/* title */
-
-.title-container {
-    background-color: #93c7ef;
-    color: white;
-    font-size: calc(1.5rem + 1vw);
-    position: relative;
-    background-image: url(../img/sections-banner.jpg);
-    background-position: center right;
-}
-
-.title-container .title {
-    position: relative;
-}
-
-.title h2 {
-    font-size: calc(1.5rem + 1vw);
-    letter-spacing: .2rem;
-}
-
-.sections-overlay {
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-    background-color: #7cc5fc;
-    position: absolute;
-    opacity: 0.3;
-}
-
 /* filter */
 
 .filter-block {
@@ -628,6 +599,83 @@ footer {
 }
   
 
+/* :.............................
+
+        SERVICES.HTML STYLES
+
+    .............................
+*/
+
+/* services */
+
+.service-title {
+    font-size: 3rem;
+    color:#93c7ef;
+}
+
+.service-description {
+    color:#888585;
+    text-align: justify;
+}
+
+.service-info .fa {
+    font-size: 3rem;
+    color:#eec051;
+}
+
+.service-info p {
+    font-size: 1.3rem;
+    color:#888585;
+}
+
+/* banner */
+
+.service-banner-container {
+    background-color:#eec051;
+    color: white;
+    font-size: calc(1.5rem + 1vw);
+    position: relative;
+    background-image: url(../img/services-banner.png);
+    background-position: center right;
+}
+
+.service-banner-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-banner-title h2 {
+    font-size: calc(0.8rem + 1vw);
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.service-banner-overlay {
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color:#eec051;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.service-banner-title button {
+    background-color: #eec051;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 99px;
+}
+
+.service-banner-title button:hover {
+    background-color: #c87676;
+    color: white;
+    border: none;
+}
+
 /*  ..............................
 
             MEDIA QUERIES 
@@ -685,3 +733,12 @@ footer {
 
 }
 
+@media  screen and (min-width:1200px) {
+    /* ..................
+        SERVICE.HTML
+        .................
+     */
+    .service-info p {
+        font-size: 1.5rem;
+    }   
+}
