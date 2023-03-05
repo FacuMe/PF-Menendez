@@ -466,7 +466,7 @@ footer {
 
 /* :.............................
 
-        PRODUCTS.HTML STYLES
+        PRODUCTOS.HTML STYLES
 
     .............................
 */
@@ -601,7 +601,7 @@ footer {
 
 /* :.............................
 
-        SERVICES.HTML STYLES
+        SERVICIOS.HTML STYLES
 
     .............................
 */
@@ -609,7 +609,7 @@ footer {
 /* services */
 
 .service-title {
-    font-size: 3rem;
+    font-size: calc(2rem + 1vw);
     color:#93c7ef;
 }
 
@@ -676,6 +676,58 @@ footer {
     border: none;
 }
 
+/* :.............................
+
+        NOSOTROS.HTML STYLES
+
+    .............................
+*/
+
+/* about us main */
+
+.about-us {
+    text-align: justify;
+}
+
+.about-us-title {
+    color:#93c7ef;
+    font-size: calc(2rem + 1vw);
+}
+
+.about-us-subtitle {
+    color:#706e6e
+}
+
+.about-us-description {
+    color:#706e6e;
+}
+
+.about-us-img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.about-us button {
+    background-color: #eec051;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 99px;
+}
+
+.about-us button:hover {
+    background-color: #c87676;
+    color: white;
+    border: none;
+}
+
+/* about us banner */
+
+.about-us-banner-description {
+    color: #93c7ef;
+    font-size: calc(1.3rem + 1vw);
+}
+
 /*  ..............................
 
             MEDIA QUERIES 
@@ -731,11 +783,20 @@ footer {
         height: 17rem;
     }
 
+    /* ................
+        NOSOTROS.HTML
+        ...............
+     */
+
+     .about-us-img {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media  screen and (min-width:1200px) {
     /* ..................
-        SERVICE.HTML
+        SERVICIOS.HTML
         .................
      */
     .service-info p {
