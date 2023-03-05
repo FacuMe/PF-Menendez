@@ -695,7 +695,7 @@ footer {
 }
 
 .about-us-subtitle {
-    color:#706e6e
+    color:#706e6e;
 }
 
 .about-us-description {
@@ -728,6 +728,38 @@ footer {
     font-size: calc(1.3rem + 1vw);
 }
 
+/* :.............................
+
+        CONTACTO.HTML STYLES
+
+    .............................
+*/
+
+.contact-title h4{
+    color:#93c7ef;
+    font-size: calc(1rem + 1vw);
+}
+
+.contact-info h3{
+    color:#eec051;
+    font-size: calc(1.5rem + 1vw);
+    letter-spacing: 0.2rem;
+}
+
+.contact-info-description {
+    color: #706e6e;
+    font-size: calc(0.4rem + 1vw);
+}
+
+.contact-info-description .fa {
+    color:#c87676
+}
+
+.contact-info iframe {
+    width:20rem;
+    height:15rem;
+}
+
 /*  ..............................
 
             MEDIA QUERIES 
@@ -746,6 +778,16 @@ footer {
         font-size: 30px;
     }
 
+
+    /* ................
+        CONTACTO.HTML
+        ...............
+     */
+
+    .contact-info iframe {
+        width:23rem;
+        height:18rem;
+    }
 }
 
 @media  screen and (min-width:768px) {
@@ -792,6 +834,16 @@ footer {
         width: auto;
         height: auto;
     }
+
+    /* ................
+        CONTACTO.HTML
+        ...............
+     */
+
+     .contact-info iframe {
+        width:23rem;
+        height:18rem;
+    }
 }
 
 @media  screen and (min-width:1200px) {
@@ -802,4 +854,14 @@ footer {
     .service-info p {
         font-size: 1.5rem;
     }   
+
+    /* ................
+        CONTACTO.HTML
+        ...............
+     */
+
+     .contact-info iframe {
+        width:27rem;
+        height:22rem;
+    }
 }

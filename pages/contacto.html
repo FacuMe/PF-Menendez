@@ -62,41 +62,100 @@
 
     <main>
         <section>
-            <h3>Si tenés dudas o querés reservar un turno, comunicate con nosotros</h3>
-            
-            <div class="info">
-                <p><i class="fa fa-whatsapp" aria-hidden="true"></i> 14-4334-5422</p>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i>veterinaria-milovet@gmail.com</p>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i>Dr. Ignacio Arieta 9.134, San Justo.</p>
-                <p>Lunes a Sábados de 9 a 23 hs.</p>
-    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.393200661074!2d-58.54259267402462!3d-34.695261217859695!2m3!1f0!2f0!
-                3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8b125196471%3A0x27685b833ea8935d!2sDr.%20Ignacio%20Arieta%205488%2C%20B1766DQZ%20Gran%20Buenos%20Aires%
-                2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1675618389533!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" 
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container-fluid">
+                <div class="row mt-4 justify-content-center contact-title">
+                    <div class="col-10 pt-4 col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h4>
+                            Si tenés dudas o querés reservar un turno, <strong>comunicate con nosotros</strong>
+                        </h4>
+                    </div>
+                </div>
+                
+
+                <div class="row m-5 justify-content-center gap-5 contact-info">
+                    <div class="col-md-5 col-xl-4 pt-3 d-flex flex-column">
+                        <h3>
+                            <b>Contactanos</b>
+                        </h3>
+                        <div class="contact-info-description pt-3 ps-4">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                <p>14-4334-5422</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-2 gap-2">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <p>veterinaria-milovet@gmail.com</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-2 mb-2 gap-2">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>Dr. Ignacio Arieta 9.134, San Justo.</p>
+                            </div>
+                            <p>Lunes a Sábados de 9 a 23 hs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xl-4 pt-3 d-flex flex-column justify-content-center align-items-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.393200661074!2d-58.54259267402462!3d-34.695261217859695!2m3!1f0!2f0!
+                        3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8b125196471%3A0x27685b833ea8935d!2sDr.%20Ignacio%20Arieta%205488%2C%20B1766DQZ%20Gran%20Buenos%20Aires%
+                        2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1675618389533!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section>
-            <form action="submit" method="post">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3 text-center">Si tenes dudas, consultas o sugerencias mandanos un mensaje</h4>
+                        <form type="submit" method="post" class="needs-validation" novalidate="">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Ingresa el nombre de tu mascota" value="" required="">
+                                    <div class="invalid-feedback">
+                                        El nombre es requerido.
+                                    </div>
+                                </div>
+                
+                                <div class="col-sm-6">
+                                    <label for="tel" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="tel" placeholder="Ingresa un número telefónico" value="" required="">
+                                    <div class="invalid-feedback">
+                                        El número telefónico es requerido.
+                                    </div>
+                                </div>
+                
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Ingresa un correo electrónico válido">
+                                    <div class="invalid-feedback">
+                                        Ingresá una dirección de correo electrónico válida.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="textarea" class="form-label">Duda, consulta o sugerencia.</label>
+                                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                                    <div class="invalid-feedback">
+                                        Escribinos tu duda, consulta o sugerencia.
+                                    </div>
+                                </div>
+                
+                                <div class="form-check ms-2">
+                                    <input type="checkbox" class="form-check-input" id="save-info">
+                                    <label class="form-check-label" for="save-info">Quiero recibir novedades por mail</label>
+                                </div>
+                    
+                                <div>
+                                    <button type="submit" class="btn btn-light mt-4">Deseo contactarme</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="tel">
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" id="mensaje"></textarea>
-                </div>
-                <button>Enviar</button>
-            </form>
+            </div>
         </section>
         
     </main>
