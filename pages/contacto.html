@@ -18,45 +18,45 @@
 
     <header>
         <div class="container-fluid">
-            <div class="row justify-content-center title-container">
-                <div class="sections-overlay"></div>
-                <div class="col-8 pt-4 pb-4 title">
-                    <h2><b>Contacto</b></h2>
+            <div class="row justify-content-center section_header">
+                <div class="section_header__overlay"></div>
+                <div class="col-8 pt-4 pb-4 section_header__title">
+                    <h2 class="section_header__title__main"><b>Contacto</b></h2>
                     <h5>Inicio > Contacto</h5>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar sticky-top navbar-dark navbar-expand-lg index-nav">
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand ps-3" href="../index.html">
-                <img src="../img/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-logo">
+                <img src="../img/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-logo navbar-brand__img">
                 Milovet
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav__list">
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/productos.html">Productos</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    <li class="nav-item navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-            <i class="fa fa-shopping-cart fa-2x pe-4" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart fa-2x pe-4 navbar__cart-icon" aria-hidden="true"></i>
         </div>
     </nav>
 
@@ -66,13 +66,13 @@
                 <div class="row mt-3 justify-content-center contact-title">
                     <div class="col-10 pt-4 col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
                         <h4>
-                            Si tenés dudas o querés reservar un turno, <strong>comunicate con nosotros</strong>
+                            Si querés reservar un turno, <strong>comunicate con nosotros</strong>
                         </h4>
                     </div>
                 </div>
                 
 
-                <div class="row pt-2 pb-5 ps-5 pe-5 justify-content-center gap-3 contact-info">
+                <div class="row pt-4 pb-5 ps-5 pe-5 justify-content-center gap-3 contact-info">
                     <div class="col-sm-5 col-md-5 col-xl-4 d-flex flex-column">
                         <h3>
                             <b>Contactanos</b>
@@ -187,39 +187,39 @@
     <footer>
         <div class="container-fluid">
             <div class="row text-white">
-                <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer-nav">
-                    <ul class="d-flex flex-column justify-content-center">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer_nav">
+                    <ul class="d-flex flex-column justify-content-center footer_nav__list">
+                        <li><a href="../index.html" class="footer_nav__list__item">Inicio</a></li>
+                        <li><a href="./productos.html" class="footer_nav__list__item">Productos</a></li>
+                        <li><a href="./servicios.html" class="footer_nav__list__item">Servicios</a></li>
+                        <li><a href="./nosotros.html" class="footer_nav__list__item">Nosotros</a></li>
+                        <li><a href="./contacto.html" class="footer_nav__list__item">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 order-md-3 d-flex flex-column footer-info">
-                    <div class="mt-2 pb-4 ps-3 contenedor-info">
-                        <div class="d-flex align-items-center info-item">
+                <div class="col-md-4 order-md-3 d-flex flex-column footer_info">
+                    <div class="mt-2 pb-4 ps-3 footer_info__contenedor">
+                        <div class="d-flex align-items-center footer_info__contenedor__item">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <p class="ms-2">Dr. Ignacio Arieta 9.134, San Justo.</p>
                         </div>
-                        <div class="mt-2 d-flex align-items-center info-item">
+                        <div class="mt-2 d-flex align-items-center footer_info__contenedor__item">
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
                             <p class="ms-2">Lunes a Sábados de 9 a 23 hs.</p>
                         </div>
                     </div>
-                    <div class="media-icons">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-whatsapp"></a>
+                    <div class="footer_info__media-icons">
+                        <a href="#" class="fa fa-facebook footer_info__media-icons__icon"></a>
+                        <a href="#" class="fa fa-instagram footer_info__media-icons__icon"></a>
+                        <a href="#" class="fa fa-whatsapp footer_info__media-icons__icon"></a>
                     </div>
                 </div>
-                <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer-brand">
-                    <div class="d-flex align-items-center contenedor-brand">
-                        <img src="../img/logo1.jpg" class="img-fluid" alt="Milovet Veterinaria Logo">
-                        <p>Milovet</p>
+                <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer_brand">
+                    <div class="d-flex align-items-center footer_brand__contenedor">
+                        <img src="../img/logo1.jpg" class="img-fluid footer_brand__contenedor__img" alt="Milovet Veterinaria Logo">
+                        <p class="footer_brand__contenedor__name">Milovet</p>
                     </div>
                     <div class="pb-5">
-                        <hr>
+                        <hr class="footer_brand__contenedor__division">
                         <p>F.M. 2023 &#169 &#10072 Todos los derechos reservados</p>
                     </div>
                 </div>

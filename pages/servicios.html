@@ -19,128 +19,127 @@
 
     <header>
         <div class="container-fluid">
-            <div class="row justify-content-center title-container">
-                <div class="sections-overlay"></div>
-                <div class="col-8 pt-4 pb-4 title">
-                    <h2><b>Servicios</b></h2>
+            <div class="row justify-content-center section_header">
+                <div class="section_header__overlay"></div>
+                <div class="col-8 pt-4 pb-4 section_header__title">
+                    <h2 class="section_header__title__main"><b>Servicios</b></h2>
                     <h5>Inicio > Servicios</h5>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar sticky-top navbar-dark navbar-expand-lg index-nav">
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand ps-3" href="../index.html">
-                <img src="../img/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-logo">
+                <img src="../img/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-logo navbar-brand__img">
                 Milovet
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav__list">
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/productos.html">Productos</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    <li class="nav-item navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-            <i class="fa fa-shopping-cart fa-2x pe-4" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart fa-2x pe-4 navbar__cart-icon" aria-hidden="true"></i>
         </div>
     </nav>
 
     <main>
-        <section>
+        <section class="services">
             <div class="container-fluid">
-                <div class="row m-5 justify-content-center gap-5">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center gap-4 pt-5 pb-5 services__service" id="servicio-1">
+                    <div class="col-10 col-sm-4 order-sm-1 d-flex justify-content-center align-items-center">
                         <img src="../img/service-img-1.png" class="img-fluid" alt="Médica escuchando los latidos de un perro">
                     </div>
-                    <div class="col-md-4 pt-5 d-flex flex-column">
-                        <h3 class="mt-4 service-title">
+                    <div class="col-10 col-sm-4 order-sm-2 d-flex flex-column">
+                        <h3 class="services__service__title">
                             Urgencias
                         </h3>
-                        <h5 class="mt-3 service-description"> 
+                        <h5 class="mt-3 services__service__description"> 
                             Se realizan tratamientos ambulatorios en el domicilio. Si el estado del paciente es crítico o necesita de una intervención compleja, 
                             será derivado a clínicas de internación y/o urgencias.
                         </h5>
-                        <div class="mt-3 d-flex align-items-center gap-2 service-info">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <p>Visita médica domiciliaria</p>
+                        <div class="mt-3 d-flex align-items-center gap-2 services__service__info">
+                            <i class="fa fa-clock-o services__service__info__icon" aria-hidden="true"></i>
+                            <p class="services__service__info__content">Disponible las 24 horas</p>
                         </div>
                     </div>
                 </div>
-                <div class="row m-5 justify-content-center gap-5">
-                    <div class="col-md-4 pt-5 d-flex flex-column">
-                        <h3 class="mt-4 service-title">
-                            Urgencias
-                        </h3>
-                        <h5 class="mt-3 service-description"> 
-                            Se realizan tratamientos ambulatorios en el domicilio. Si el estado del paciente es crítico o necesita de una intervención compleja, 
-                            será derivado a clínicas de internación y/o urgencias.
-                        </h5>
-                        <div class="mt-3 d-flex align-items-center gap-2 service-info">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <p>Visita médica domiciliaria</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center gap-4 pb-5 services__service" id="servicio-2">
+                    <div class="col-10 col-sm-4 order-sm-2 d-flex justify-content-center align-items-center">
                         <img src="../img/service-img-4.png" class="img-fluid" alt="Médica escuchando los latidos de un perro">
                     </div>
-                </div>
-                <div class="row pt-4 pb-4 justify-content-center service-banner-container">
-                    <div class="service-banner-overlay"></div>
-                    <div class="col-8 pt-4 pb-4 service-banner-title">
-                        <h2><b>Contactanos para brindarte el mejor servicio</b></h2>
-                        <a href="../pages/contacto.html"><button type="button" class="btn btn-light mt-3">Deseo contactarme</button></a>
+                    <div class="col-10 col-sm-4 order-sm-1 d-flex flex-column">
+                        <h3 class="services__service__title">
+                            Interconsultas
+                        </h3>
+                        <h5 class="mt-3 services__service__description"> 
+                            En casos en que la situación clínica del paciente lo ameriten, se derivarán a Centros de Diagnóstico o profesionales especializados 
+                            (ccografías, radiografías, cardiología, análisis de laboratorio, etc).
+                        </h5>
+                        <div class="mt-3 d-flex align-items-center gap-2 services__service__info">
+                            <i class="fa fa-clock-o services__service__info__icon" aria-hidden="true"></i>
+                            <p class="services__service__info__content">Visita médica domiciliaria mensual</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row m-5 justify-content-center gap-5">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="row pt-4 pb-4 justify-content-center services__banner">
+                    <div class="services__banner__overlay"></div>
+                    <div class="col-8 pt-4 pb-4 services__banner__title">
+                        <h2 class="services__banner__title__description"><b>Contactanos para brindarte el mejor servicio</b></h2>
+                        <a href="../pages/contacto.html"><button type="button" class="btn btn-light mt-3 services__banner__title__btn">Deseo contactarme</button></a>
+                    </div>
+                </div>
+                <div class="row justify-content-center gap-4 pt-5 pb-5 services__service" id="servicio-3">
+                    <div class="col-10 col-sm-4 order-sm-1 d-flex justify-content-center align-items-center">
                         <img src="../img/service-img-3.png" class="img-fluid" alt="Médica escuchando los latidos de un perro">
                     </div>
-                    <div class="col-md-4 pt-5 d-flex flex-column">
-                        <h3 class="mt-4 service-title">
-                            Urgencias
+                    <div class="col-10 col-sm-4 order-sm-2 d-flex flex-column">
+                        <h3 class="services__service__title">
+                            Clínica General
                         </h3>
-                        <h5 class="mt-3 service-description"> 
-                            Se realizan tratamientos ambulatorios en el domicilio. Si el estado del paciente es crítico o necesita de una intervención compleja, 
-                            será derivado a clínicas de internación y/o urgencias.
+                        <h5 class="mt-3 services__service__description"> 
+                            Consultas generales, vacunas, desparasitaciones y seguimiento del paciente mientras esté bajo tratamiento, certificados.
                         </h5>
-                        <div class="mt-3 d-flex align-items-center gap-2 service-info">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <p>Visita médica domiciliaria</p>
+                        <div class="mt-3 d-flex align-items-center gap-2 services__service__info">
+                            <i class="fa fa-clock-o services__service__info__icon" aria-hidden="true"></i>
+                            <p class="services__service__info__content">Servicio médico ilimitado</p>
                         </div>
                     </div>
                 </div>
-                <div class="row m-5 justify-content-center gap-5">
-                    <div class="col-md-4 pt-5 d-flex flex-column">
-                        <h3 class="mt-4 service-title">
-                            Urgencias
-                        </h3>
-                        <h5 class="mt-3 service-description"> 
-                            Se realizan tratamientos ambulatorios en el domicilio. Si el estado del paciente es crítico o necesita de una intervención compleja, 
-                            será derivado a clínicas de internación y/o urgencias.
-                        </h5>
-                        <div class="mt-3 d-flex align-items-center gap-2 service-info">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <p>Visita médica domiciliaria</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center gap-4 pb-5 service" id="servicio-4">
+                    <div class="col-10 col-sm-4 order-sm-2 d-flex justify-content-center align-items-center">
                         <img src="../img/service-img-5.jpg" class="img-fluid" alt="Médica escuchando los latidos de un perro">
+                    </div>
+                    <div class="col-10 col-sm-4 order-sm-1 d-flex flex-column">
+                        <h3 class="services__service__title">
+                            Atención personalizada
+                        </h3>
+                        <h5 class="mt-3 services__service__description"> 
+                            Nuestro Médico Veterinario especialista te ayuda a mejorar la calidad de vida de tus mascotas, a través del desarrollo de regímenes 
+                            alimentarios y suplementos.
+                        </h5>
+                        <div class="mt-3 d-flex align-items-center gap-2 services__service__info">
+                            <i class="fa fa-clock-o services__service__info__icon" aria-hidden="true"></i>
+                            <p class="services__service__info__content">Consulta médica virtual</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,39 +149,39 @@
     <footer>
         <div class="container-fluid">
             <div class="row text-white">
-                <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer-nav">
-                    <ul class="d-flex flex-column justify-content-center">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer_nav">
+                    <ul class="d-flex flex-column justify-content-center footer_nav__list">
+                        <li><a href="../index.html" class="footer_nav__list__item">Inicio</a></li>
+                        <li><a href="./productos.html" class="footer_nav__list__item">Productos</a></li>
+                        <li><a href="./servicios.html" class="footer_nav__list__item">Servicios</a></li>
+                        <li><a href="./nosotros.html" class="footer_nav__list__item">Nosotros</a></li>
+                        <li><a href="./contacto.html" class="footer_nav__list__item">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 order-md-3 d-flex flex-column footer-info">
-                    <div class="mt-2 pb-4 ps-3 contenedor-info">
-                        <div class="d-flex align-items-center info-item">
+                <div class="col-md-4 order-md-3 d-flex flex-column footer_info">
+                    <div class="mt-2 pb-4 ps-3 footer_info__contenedor">
+                        <div class="d-flex align-items-center footer_info__contenedor__item">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <p class="ms-2">Dr. Ignacio Arieta 9.134, San Justo.</p>
                         </div>
-                        <div class="mt-2 d-flex align-items-center info-item">
+                        <div class="mt-2 d-flex align-items-center footer_info__contenedor__item">
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
                             <p class="ms-2">Lunes a Sábados de 9 a 23 hs.</p>
                         </div>
                     </div>
-                    <div class="media-icons">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-whatsapp"></a>
+                    <div class="footer_info__media-icons">
+                        <a href="#" class="fa fa-facebook footer_info__media-icons__icon"></a>
+                        <a href="#" class="fa fa-instagram footer_info__media-icons__icon"></a>
+                        <a href="#" class="fa fa-whatsapp footer_info__media-icons__icon"></a>
                     </div>
                 </div>
-                <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer-brand">
-                    <div class="d-flex align-items-center contenedor-brand">
-                        <img src="../img/logo1.jpg" class="img-fluid" alt="Milovet Veterinaria Logo">
-                        <p>Milovet</p>
+                <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer_brand">
+                    <div class="d-flex align-items-center footer_brand__contenedor">
+                        <img src="../img/logo1.jpg" class="img-fluid footer_brand__contenedor__img" alt="Milovet Veterinaria Logo">
+                        <p class="footer_brand__contenedor__name">Milovet</p>
                     </div>
                     <div class="pb-5">
-                        <hr>
+                        <hr class="footer_brand__contenedor__division">
                         <p>F.M. 2023 &#169 &#10072 Todos los derechos reservados</p>
                     </div>
                 </div>

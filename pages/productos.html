@@ -20,45 +20,45 @@
 
     <header>
         <div class="container-fluid">
-            <div class="row justify-content-center title-container">
-                <div class="sections-overlay"></div>
-                <div class="col-8 pt-4 pb-4 title">
-                    <h2><b>Productos</b></h2>
+            <div class="row justify-content-center section_header">
+                <div class="section_header__overlay"></div>
+                <div class="col-8 pt-4 pb-4 section_header__title">
+                    <h2 class="section_header__title__main"><b>Productos</b></h2>
                     <h5>Inicio > Productos</h5>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav class="navbar sticky-top navbar-dark navbar-expand-lg product-nav">
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand ps-3" href="../index.html">
-                <img src="../img/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-logo">
+                <img src="../img/logo1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-logo navbar-brand__img">
                 Milovet
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav__list">
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/productos.html">Productos</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item pe-4">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    <li class="nav-item pe-4 navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    <li class="nav-item navbar-nav__list__item">
+                        <a class="nav-link navbar-nav__list__item__link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-            <i class="fa fa-shopping-cart fa-2x pe-4" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart fa-2x pe-4 navbar__cart-icon" aria-hidden="true"></i>
         </div>
     </nav>
 
@@ -67,7 +67,7 @@
             <div class="row row-cols-sm-2">
                 <!-- filter for product items -->
                 <section class="col-sm-4 col-md-3 col-lg-2">
-                    <div class="row p-2 justify-content-center filter-block">
+                    <div class="row p-2 justify-content-center filter_block">
                         <div class="col-12">
                             <div class="pt-3 pb-4 input-group">
                                 <input class="form-control border-end-0 border rounded-pill me-2" type="text" placeholder="Buscar" id="search-input">
@@ -77,25 +77,25 @@
                                     </button>
                                 </span>
                             </div>
-                            <div class="col-12 ps-4 filter">
-                                <ul>
-                                    <li class="mb-4 me-3 filter-item">
-                                        <a href="#">Todos</a>
+                            <div class="col-12 ps-4 filter_block__filter">
+                                <ul class="filter_block__filter__list">
+                                    <li class="mb-4 me-3 filter_block__filter__list__item">
+                                        <a href="#todos" class="filter_block__filter__list__item__link">Todos</a>
                                     </li>
-                                    <li class="mb-4 me-3 filter-item">
-                                        <a href="#">Comida</a>
+                                    <li class="mb-4 me-3 filter_block__filter__list__item">
+                                        <a href="#comida" class="filter_block__filter__list__item__link">Comida</a>
                                     </li>
-                                    <li class="mb-4 me-3 filter-item">
-                                        <a href="#">Juguetes</a>
+                                    <li class="mb-4 me-3 filter_block__filter__list__item">
+                                        <a href="#juguetes" class="filter_block__filter__list__item__link">Juguetes</a>
                                     </li>
-                                    <li class="mb-4 me-3 filter-item">
-                                        <a href="#">Correas</a>
+                                    <li class="mb-4 me-3 filter_block__filter__list__item">
+                                        <a href="#correas" class="filter_block__filter__list__item__link">Correas</a>
                                     </li>
-                                    <li class="mb-4 me-3 filter-item">
-                                        <a href="#">Camas</a>
+                                    <li class="mb-4 me-3 filter_block__filter__list__item">
+                                        <a href="#camas" class="filter_block__filter__list__item__link">Camas</a>
                                     </li>
-                                    <li class="mb-4 me-3 filter-item">
-                                        <a href="#">Otros</a>
+                                    <li class="mb-4 me-3 filter_block__filter__list__item">
+                                        <a href="#otros" class="filter_block__filter__list__item__link">Otros</a>
                                     </li>
                                 </ul>
                             </div>
@@ -104,291 +104,343 @@
                 </section>
                 <!-- list of product items -->
                 <section class="col-sm-8 col-md-9 col-lg-10 products">
-                    <div class="row products-card-block g-1">
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(1).jpg" alt="...">        
+                    <div class="row products__block g-1" id="todos">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center" id="comida">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(1).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Alimento Balanceado x 1kg.</h5>
-                                <p class="title">Comida</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Alimento Balanceado x 1kg.</h5>
+                                <p class="products__block__item__box__title">Comida</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(2).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(2).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Alimento Balanceado x 5kg.</h5>
-                                <p class="title">Comida</p>
-                                <p class="price">$900</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Alimento Balanceado</h5>
+                                <p class="products__block__item__box__title">Comida</p>
+                                <p class="products__block__item__box__price">$900</p>
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>                                       
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(10).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(10).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Sabrosito x 1kg.</h5>
-                                <p class="title">Comida</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Sabrosito x 1kg.</h5>
+                                <p class="products__block__item__box__title">Comida</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(3).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center" id="juguetes">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(3).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Ratón de juguete de hilo</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$300</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Ratón de juguete de hilo</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$300</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(24).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(24).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Set de ratitas multicolor</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Set de ratitas multicolor</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(6).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(6).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Pelotas de goma multicolor</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$800</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Pelotas de goma multicolor</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$800</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(7).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(7).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Pelota de goma XL</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$1200</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Pelota de goma XL</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$1200</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(25).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(25).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Juguete para rellenar</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$700</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Juguete para rellenar</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$700</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(26).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(26).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Juguete pescador para gatos</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Juguete pescador para gatos</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(5).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(5).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Juguete de plumas</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Juguete de plumas</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(8).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(8).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Mordedor de goma</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$900</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Mordedor de goma</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$900</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(22).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(22).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Mordedor doble de hilo</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$800</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Mordedor doble de hilo</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$800</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(23).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(23).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Muñeco de goma gallina</h5>
-                                <p class="title">Juguetes</p>
-                                <p class="price">$500</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Muñeco de goma gallina</h5>
+                                <p class="products__block__item__box__title">Juguetes</p>
+                                <p class="products__block__item__box__price">$500</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(4).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center" id="correas">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(4).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Correa ajustable con pretal</h5>
-                                <p class="title">Correas</p>
-                                <p class="price">$700</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Correa ajustable con pretal</h5>
+                                <p class="products__block__item__box__title">Correas</p>
+                                <p class="products__block__item__box__price">$700</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(18).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(18).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Pretal reforzado</h5>
-                                <p class="title">Correas</p>
-                                <p class="price">$1300</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Pretal reforzado</h5>
+                                <p class="products__block__item__box__title">Correas</p>
+                                <p class="products__block__item__box__price">$1300</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(19).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(19).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Correa extensible</h5>
-                                <p class="title">Correas</p>
-                                <p class="price">$1100</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Correa extensible</h5>
+                                <p class="products__block__item__box__title">Correas</p>
+                                <p class="products__block__item__box__price">$1100</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(13).jpeg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center" id="camas">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(13).jpeg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Cama 80x60</h5>
-                                <p class="title">Camas</p>
-                                <p class="price">$4000</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Cama 80x60</h5>
+                                <p class="products__block__item__box__title">Camas</p>
+                                <p class="products__block__item__box__price">$4000</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(14).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(14).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Cama 60x40</h5>
-                                <p class="title">Camas</p>
-                                <p class="price">$3000</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Cama 60x40</h5>
+                                <p class="products__block__item__box__title">Camas</p>
+                                <p class="products__block__item__box__price">$3000</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(15).png" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(15).png" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Cama cuna 100x80</h5>
-                                <p class="title">Camas</p>
-                                <p class="price">$5000</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Cama cuna 100x80</h5>
+                                <p class="products__block__item__box__title">Camas</p>
+                                <p class="products__block__item__box__price">$5000</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(16).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(16).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Cama colgante para gato</h5>
-                                <p class="title">Camas</p>
-                                <p class="price">1600</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Cama colgante para gato</h5>
+                                <p class="products__block__item__box__title">Camas</p>
+                                <p class="products__block__item__box__price">1600</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(17).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(17).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Puff de descanso</h5>
-                                <p class="title">Camas</p>
-                                <p class="price">$2400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Puff de descanso</h5>
+                                <p class="products__block__item__box__title">Camas</p>
+                                <p class="products__block__item__box__price">$2400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(9).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center" id="otros">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(9).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Plato de metal</h5>
-                                <p class="title">Accesorios</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Plato de metal</h5>
+                                <p class="products__block__item__box__title">Accesorios</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(12).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(12).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Bebedero portatil</h5>
-                                <p class="title">Accesorios</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Bebedero portatil</h5>
+                                <p class="products__block__item__box__title">Accesorios</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(20).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(20).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Cepillo para gatos</h5>
-                                <p class="title">Accesorios</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Cepillo para gatos</h5>
+                                <p class="products__block__item__box__title">Accesorios</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(21).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(21).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Cepillo para perros</h5>
-                                <p class="title">Accesorios</p>
-                                <p class="price">$400</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Cepillo para perros</h5>
+                                <p class="products__block__item__box__title">Accesorios</p>
+                                <p class="products__block__item__box__price">$400</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 item d-flex justify-content-center">
-                            <div class="box">
-                                <div class="imageBox">
-                                    <img src="../img/img-product-(27).jpg" alt="...">        
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 products__block__item d-flex justify-content-center">
+                            <div class="products__block__item__box">
+                                <div class="products__block__item__box__image-container">
+                                    <img src="../img/img-product-(27).jpg" class="products__block__item__box__image-container__img" alt="...">        
                                 </div>
-                                <h5 class="name">Rascador para gatos</h5>
-                                <p class="title">Accesorios</p>
-                                <p class="price">$950</p>           
-                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                                <h5 class="products__block__item__box__name">Rascador para gatos</h5>
+                                <p class="products__block__item__box__title">Accesorios</p>
+                                <p class="products__block__item__box__price">$950</p>           
+                                <div>
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -401,39 +453,39 @@
     <footer>
         <div class="container-fluid">
             <div class="row text-white">
-                <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer-nav">
-                    <ul class="d-flex flex-column justify-content-center">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer_nav">
+                    <ul class="d-flex flex-column justify-content-center footer_nav__list">
+                        <li><a href="../index.html" class="footer_nav__list__item">Inicio</a></li>
+                        <li><a href="./productos.html" class="footer_nav__list__item">Productos</a></li>
+                        <li><a href="./servicios.html" class="footer_nav__list__item">Servicios</a></li>
+                        <li><a href="./nosotros.html" class="footer_nav__list__item">Nosotros</a></li>
+                        <li><a href="./contacto.html" class="footer_nav__list__item">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 order-md-3 d-flex flex-column footer-info">
-                    <div class="mt-2 pb-4 ps-3 contenedor-info">
-                        <div class="d-flex align-items-center info-item">
+                <div class="col-md-4 order-md-3 d-flex flex-column footer_info">
+                    <div class="mt-2 pb-4 ps-3 footer_info__contenedor">
+                        <div class="d-flex align-items-center footer_info__contenedor__item">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <p class="ms-2">Dr. Ignacio Arieta 9.134, San Justo.</p>
                         </div>
-                        <div class="mt-2 d-flex align-items-center info-item">
+                        <div class="mt-2 d-flex align-items-center footer_info__contenedor__item">
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
                             <p class="ms-2">Lunes a Sábados de 9 a 23 hs.</p>
                         </div>
                     </div>
-                    <div class="media-icons">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-whatsapp"></a>
+                    <div class="footer_info__media-icons">
+                        <a href="#" class="fa fa-facebook footer_info__media-icons__icon"></a>
+                        <a href="#" class="fa fa-instagram footer_info__media-icons__icon"></a>
+                        <a href="#" class="fa fa-whatsapp footer_info__media-icons__icon"></a>
                     </div>
                 </div>
-                <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer-brand">
-                    <div class="d-flex align-items-center contenedor-brand">
-                        <img src="../img/logo1.jpg" class="img-fluid" alt="Milovet Veterinaria Logo">
-                        <p>Milovet</p>
+                <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer_brand">
+                    <div class="d-flex align-items-center footer_brand__contenedor">
+                        <img src="../img/logo1.jpg" class="img-fluid footer_brand__contenedor__img" alt="Milovet Veterinaria Logo">
+                        <p class="footer_brand__contenedor__name">Milovet</p>
                     </div>
                     <div class="pb-5">
-                        <hr>
+                        <hr class="footer_brand__contenedor__division">
                         <p>F.M. 2023 &#169 &#10072 Todos los derechos reservados</p>
                     </div>
                 </div>
