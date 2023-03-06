@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(../img/index\ background-huellas.png);
+    background-image: url(../img/index\ background-huellas\(3\).png);
     background-size: contain;
 }
 
@@ -686,30 +686,30 @@ footer {
 
 /* about us main */
 
-.about-us {
+.about {
     text-align: justify;
 }
 
-.about-us-title {
+.about__title {
     color:#93c7ef;
     font-size: calc(2rem + 1vw);
 }
 
-.about-us-subtitle {
+.about__subtitle {
     color:#706e6e;
 }
 
-.about-us-description {
+.about__description {
     color:#706e6e;
     font-size: calc(0.9rem + 1vw);
 }
 
-.about-us-img {
+.about__img {
     width: 15rem;
     height: 15rem;
 }
 
-.about-us button {
+.about__btn {
     background-color: #eec051;
     color: white;
     border: none;
@@ -717,7 +717,7 @@ footer {
     border-radius: 99px;
 }
 
-.about-us button:hover {
+.about__btn:hover {
     background-color: #c87676;
     color: white;
     border: none;
@@ -725,7 +725,7 @@ footer {
 
 /* about us banner */
 
-.about-us-banner-description {
+.about__banner__description {
     color: #93c7ef;
     font-size: calc(1.3rem + 1vw);
 }
@@ -739,29 +739,29 @@ footer {
 
 /* contact info */
 
-.contact-title h4{
+.contact__title__content{
     color:#93c7ef;
     font-size: calc(1rem + 1vw);
 }
 
-.contact-info h3{
+.contact__info__title {
     color:#eec051;
     font-size: calc(1.5rem + 1vw);
     letter-spacing: 0.05rem;
 }
 
-.contact-info-description {
+.contact__info__description {
     color: #706e6e;
     font-size: calc(0.7rem + 1vw);
 }
 
-.contact-info-description .fa {
-    color:#c87676
+.contact__info__icon {
+    color:#eec051;
 }
 
 /* contact banner */
 
-.contact-banner-container {
+.contact_banner__container {
     color: white;
     position: relative;
     background-image: url(../img/services-banner.png);
@@ -769,7 +769,7 @@ footer {
     background-attachment: fixed;
 }
 
-.contact-banner-overlay {
+.contact_banner__container__overlay {
     top: 0;
     left: 0;
     width:100%;
@@ -779,50 +779,50 @@ footer {
     opacity: 0.7;
 }
 
-.contact-banner {
+.contact_banner__container__content {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-.contact-banner img { 
+.contact_banner__container__content__img { 
     width:3.5rem;
 }
 
 /* contact form */
 
-.contact-form-title {
+.contact_form__title {
     color:#93c7ef;
     font-size: calc(1rem + 1vw);
 }
 
-.contact-form .form-label, .form-check-label {
+.contact_form__inputs .form-label, .form-check-label {
     color:#706e6e;
 }
 
-.contact-form input, #textarea {
+.contact_form__inputs input, #textarea {
     background-color:#edeaea;
 }
 
-.contact-form input:focus, #textarea:focus {
+.contact_form__inputs input:focus, #textarea:focus {
     background-color:#edeaea;
     border-color: #edeaea;
     box-shadow: none;
 }
 
-#save-info:checked {
+#save_info:checked {
     background-color:#8f8f8f;
     border-color: #edeaea;
 }
 
-.contact-form .btn {
+.contact_form__inputs__btn {
     font-size: 20px;
     background-color: #93c7ef;
     color: white;
     border: none;
 }
 
-.contact-form .btn:hover {
+.contact_form__inputs__btn:hover {
     background-color: #679dc6;
     color: white;
     border: none;
@@ -863,7 +863,7 @@ footer {
         ...............
      */
 
-    .about-us-description {
+    .about__description {
         font-size: calc(0.6rem + 1vw);
     }
 
@@ -872,15 +872,15 @@ footer {
         ...............
      */
 
-    .contact-info-description {
+    .contact__info__description { 
         font-size: calc(0.4rem + 1vw);
     }
 
-     .contact-banner img { 
+    .contact_banner__container__content__img { 
         width:5.5rem;
     }
 
-    .contact-banner h6 {
+    .contact_banner__container__content__info {
         font-size: calc(0.5rem + 1vw);
     }
 }
@@ -933,12 +933,12 @@ footer {
         ...............
      */
 
-     .about-us-img {
+     .about__img {
         width: auto;
         height: auto;
     }
 
-    .about-us-description {
+    .about__description {
         font-size: calc(0.2rem + 1vw);
     }
 }
