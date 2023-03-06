@@ -504,6 +504,13 @@ footer {
     color:#c87676;
 }
 
+.filter_block__dropdown__btn, .filter_block__dropdown__menu__item {
+    color: #4e5153;
+}
+
+.filter_block__search-btn:hover .filter_block__search-btn__icon {
+    color: #c87676;
+}
 
 /* cards */
 
