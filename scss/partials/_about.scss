@@ -1,0 +1,85 @@
+@use './variables';
+
+/* :.............................
+
+        NOSOTROS.HTML STYLES
+
+    .............................
+*/
+
+/* about us main */
+
+.about {
+    text-align: justify;
+}
+
+.about__title {
+    color:#93c7ef;
+    font-size: calc(2rem + 1vw);
+}
+
+.about__subtitle {
+    color:#706e6e;
+}
+
+.about__description {
+    color:#706e6e;
+    font-size: calc(0.9rem + 1vw);
+}
+
+.about__img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.about__btn {
+    background-color: #eec051;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 99px;
+}
+
+.about__btn:hover {
+    background-color: #c87676;
+    color: white;
+    border: none;
+}
+
+/* about us banner */
+
+.about__banner__description {
+    color: #93c7ef;
+    font-size: calc(1.3rem + 1vw);
+}
+
+
+@media  screen and (min-width:576px) {
+
+    /* ................
+        NOSOTROS.HTML
+        ...............
+     */
+
+    .about__description {
+        font-size: calc(0.6rem + 1vw);
+    }
+
+}
+
+@media  screen and (min-width:768px) {
+    
+    /* ................
+        NOSOTROS.HTML
+        ...............
+     */
+
+     .about__img {
+        width: auto;
+        height: auto;
+    }
+
+    .about__description {
+        font-size: calc(0.2rem + 1vw);
+    }
+}
