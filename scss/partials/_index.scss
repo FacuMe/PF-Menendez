@@ -1,5 +1,13 @@
 @use './variables';
 
+// MAP FOR INDEX SERVICES BG-IMG URL //
+$index-services-url: (
+    service-1: '../img/INDEX-SERVICE-CARD-DOG-PUG.jpg',
+    service-2: '../img/INDEX-SERVICE-CARD-DOG-BEAGLE.jpg',
+    service-3: '../img/INDEX-SERVICE-CARD-BLACK-CAT.jpg',
+    service-4: '../img/INDEX-SERVICE-CARD-WHITE-CAT.jpg',
+);
+
 /* :.............................
 
             INDEX STYLES
@@ -10,59 +18,71 @@
 /* Index Wapp Banner */
 
 .wapp_banner {
-    background-color: #93c7ef;
+    background-color: variables.$secondary-color;
     display: flex;
     align-items: center;
-}
 
-.wapp_banner__content {
-    color: white;
-    font-size: 21.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .wapp_banner__content {
+        color: white;
+        font-size: 21.5px;
+        @include variables.flex-row-center;
+        align-items: center;
 
-.wapp_banner__content__link {
-    text-decoration: none;
-    color:white;
-}
+        @media  screen and (min-width:variables.$media-size-small) {
+            font-size: 30px;
+        }
 
-.wapp_banner__content__link:hover {
-    color:#f1cfda;
+        @media  screen and (min-width:variables.$media-size-medium) {
+            font-size: 38px;
+            padding-right: 5rem;
+            justify-content: end;
+        }
+
+        .wapp_banner__content__link {
+            text-decoration: none;
+            color:white;
+
+            &:hover {
+                color:#f1cfda;
+            }
+        }
+    }
 }
 
 /* header main content */
 
-.header_main-content {
+.header_main_content {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     text-align: justify;
-}
 
-.header_main_content__title {
-    font-size: calc(1.560rem + 1.5vw);
-}
+    .header_main_content__title {
+        font-size: calc(1.560rem + 1.5vw);
+    }
 
-.header_main_content__btn {
-    font-size: 20px;
-    background-color: #eec051;
-    color: white;
-    border: none;
-}
+    .header_main_content__btn {
+        font-size: 20px;
+        background-color: variables.$primary-color;
+        @extend .clear-btn;
 
-.header_main_content__btn:hover {
-    background-color: #ddb14a;
-    color: white;
-    border: none;
+        &:hover {
+            background-color: #ddb14a;
+            @extend .clear-btn;
+        }
+    }
+
+    @media  screen and (min-width:variables.$media-size-medium) {
+        .header_main_content__img {
+            padding-right: 3rem;
+        }
+    }
 }
 
 /* index carousel */
 
 .carousel__slide__img {
-    height: 89.5vh;
-    width:100%;
+    @include variables.sizes(100%, 89.5vh);
     object-fit: cover;
     overflow: hidden;
     object-position: 75%;
@@ -77,159 +97,140 @@
     gap: 3rem;
     margin-bottom: 3rem;
     text-shadow: 0 0 10px #2c353e;
-}
 
-.carousel__slide__content__title {
-    font-size: calc(1.5rem + 1vw);
-}
+    .carousel__slide__content__title {
+        font-size: calc(1.5rem + 1vw);
+    }
 
-.carousel__slide__content__btn {
-    background-color: #eec051;
-    color: white;
-    border: none;
-    font-size: 20px;
-    border-radius: 99px;
-}
+    .carousel__slide__content__btn {
+        background-color: variables.$primary-color;
+        font-size: 20px;
+        border-radius: 99px;
+        @extend .clear-btn;
 
-.carousel__slide__content__btn:hover {
-    background-color: #c87676;
-    color: white;
-    border: none;
+        &:hover {
+            background-color: #c87676;
+            @extend .clear-btn;
+        }
+    }
 }
 
 /* index services */
 
 .index_services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include variables.flex-column-center;
     align-items: center;
     position: relative;
     background-image: url(../img/index-service-background.jpg);
     background-attachment: fixed;
     background-size:cover;
     background-position: 75%;
-}
 
-.index_services__overlay {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #93c7ef;
-    position: absolute;
-    opacity: 0.85;
-}
+    .index_services__overlay {
+        @extend .overlay;
+        background-color: variables.$secondary-color;
+        opacity: 0.85;
+    }
 
-.index_services__title {
-    color:white;
-    position: relative;
-    text-shadow: 0 0 4px #c7b893;
-}
+    .index_services__title {
+        color:white;
+        position: relative;
+        text-shadow: 0 0 4px #c7b893;
 
-.index_services__card-block__card{
-    transition:0.5s;
-    cursor:pointer;
-}
+        h2 {
+            font-size: calc(2rem + 1vh);
+        }
+    }
 
-.index_services__card-block__card:hover{
-    transform: scale(1.05);
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-}
+    .index_services__card-block__card{
+        transition:0.5s;
+        cursor:pointer;
 
-.index_services__card-block__card::before, .index_services__card-block__card::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale3d(0, 0, 1);
-    transition: transform .3s ease-out 0s;
-    background: rgba(255, 255, 255, 0.1);
-    content: '';
-    pointer-events: none;
-}
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+        }
 
-.index_services__card-block__card::before {
-    transform-origin: left top;
-}
+        &::before, &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale3d(0, 0, 1);
+            transition: transform .3s ease-out 0s;
+            background: rgba(255, 255, 255, 0.1);
+            content: '';
+            pointer-events: none;
+        }
 
-.index_services__card-block__card::after {
-    transform-origin: right bottom;
-}
+        &::before {
+            transform-origin: left top;
+        }
 
-.index_services__card-block__card:hover::before, .index_services__card-block__card:hover::after, 
-.index_services__card-block__card:focus::before, .index_services__card-block__card:focus::after {
-    transform: scale3d(1, 1, 1);
-}
+        &::after {
+            transform-origin: right bottom;
+        }
 
-.index_services__card-block__card__link {
-    text-decoration: none;
-}
+        &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+            transform: scale3d(1, 1, 1);
+        }
 
-.index_services__card-block__card__content {
-    border-radius: 5px;
-    height: 12rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: baseline;
-}
+        .index_services__card-block__card__link {
+            text-decoration: none;
+        }
 
-.index_services__card-block__card__content--service-1 {
-    background-image: url(../img/INDEX-SERVICE-CARD-DOG-PUG.jpg);
-    background-size: cover;
-    background-position: 75%;
-}
+        .index_services__card-block__card__content {
+            border-radius: 5px;
+            height: 12rem;
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: baseline;
 
-.index_services__card-block__card__content--service-2 {
-    background-image: url(../img/INDEX-SERVICE-CARD-DOG-BEAGLE.jpg);
-    background-size:cover;
-    background-position: 75%;
-}
+            @media screen and (min-width:variables.$media-size-medium) {
+                height: 17rem;
+            }
 
-.index_services__card-block__card__content--service-3 {
-    background-image: url(../img/INDEX-SERVICE-CARD-BLACK-CAT.jpg);
-    background-size:cover;
-    background-position: 75%;
-}
+            .index_services__card-block__card__content__title {  
+                transition:1s;
+                cursor:pointer;
+                color: white;
+                padding-left: 0.5rem;
+                text-shadow: 0 0 4px #394855;
+            }
+            
+            .index_services__card-block__card__content__text { 
+                color: white;
+                padding-left: 0.5rem;
+                text-shadow: 0 0 4px #394855;
+            }
+        }
 
-.index_services__card-block__card__content--service-4 {
-    background-image: url(../img/INDEX-SERVICE-CARD-WHITE-CAT.jpg);
-    background-size:cover;
-    background-position: 75%;
-}
+        @each $service, $url in $index-services-url {
+            .index_services__card-block__card__content--#{$service} {
+                background-image: url(#{$url});
+                background-size: cover;
+                background-position: 75%;
+            }
+        }
+    }
 
-.index_services__card-block__card__content__title {  
-    transition:1s;
-    cursor:pointer;
-    color: white;
-    padding-left: 0.5rem;
-    text-shadow: 0 0 4px #394855;
-}
-
-.index_services__card-block__card__content__text { 
-    color: white;
-    padding-left: 0.5rem;
-    text-shadow: 0 0 4px #394855;
-}
-
-.index_services__btn-container {
-    z-index: 1;
-}
-
-.index_services__btn-container__button {
-    background-color: #eec051;
-    color: white;
-    border: none;
-    font-size: 20px;
-}
-
-.index_services__btn-container__button:hover {
-    background-color: #ddb14a;
-    color: white;
-    border: none;
+    .index_services__btn-container {
+        z-index: 1;
+    
+        .index_services__btn-container__button {
+            background-color: variables.$primary-color;
+            font-size: 20px;
+            @extend .clear-btn;
+    
+            &:hover {
+                background-color: #ddb14a;
+                @extend .clear-btn;
+            }
+        }
+    }
 }
 
 /* Index product banner */
@@ -243,54 +244,15 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-}
 
-.index_product_banner__btn {
-    font-size: 20px;
-    background-color: #93c7ef;
-    color: white;
-    border: none;
-}
+    .index_product_banner__btn {
+        font-size: 20px;
+        background-color: variables.$secondary-color;
+        @extend .clear-btn;
 
-.index_product_banner__btn:hover {
-    background-color: #679dc6;
-    color: white;
-    border: none;
-}
-
-@media  screen and (min-width:576px) {
-
-    /* ................
-        INDEX
-        ...............
-     */
-
-    .wapp_banner__content {
-        font-size: 30px;
+        &:hover {
+            background-color: #679dc6;
+            @extend .clear-btn;
+        }
     }
-
-}
-
-@media  screen and (min-width:768px) {
-
-
-    /* ..................
-        INDEX
-        .................
-     */
-
-    .wapp_banner__content {
-        font-size: 38px;
-        padding-right: 5rem;
-        justify-content: end;
-    }
-
-    .header_main_content__img {
-        padding-right: 3rem;
-    }
-
-    .index_services__card-block__card__content {
-        height: 17rem;
-    }
-
 }

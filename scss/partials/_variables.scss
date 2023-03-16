@@ -7,4 +7,36 @@ $logo-font: 'Dancing Script', cursive;
 $global-font: 'Itim', cursive;
 $primary-color: #eec051;
 $secondary-color: #93c7ef;
+$media-size-small: 576px;
 $media-size-medium: 768px;
+$media-size-large: 1200px;
+
+// COMMON CLASSES TO EXTEND //
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.clear-btn {
+    color: white;
+    border: none;
+}
+
+// MIXINS //
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
