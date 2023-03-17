@@ -70,6 +70,7 @@ body footer {
 /* NAV */
 nav {
   background-color: #eec051;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.13);
 }
 nav .navbar-brand {
   font-family: "Dancing Script", cursive;
@@ -123,9 +124,11 @@ footer .footer_nav .footer_nav__list .footer_nav__list__item {
   text-decoration: none;
   font-size: 19px;
   color: white;
+  transition: all 0.3s ease;
 }
 footer .footer_nav .footer_nav__list .footer_nav__list__item:hover {
   color: rgba(88, 112, 131, 0.6588235294);
+  margin-left: 0.3rem;
 }
 footer .footer_brand__contenedor {
   gap: 2rem;
@@ -157,13 +160,20 @@ footer .footer_info .footer_info__media-icons {
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  footer .footer_info .footer_info__media-icons {
+    padding-bottom: 2rem;
+  }
+}
 footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   text-decoration: none;
   font-size: 30px;
   color: white;
+  transition: all 0.3s ease;
 }
 footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:hover {
   color: rgba(88, 112, 131, 0.6588235294);
+  margin-top: 0.3rem;
 }
 
 /* SECTIONS TITLE */
@@ -190,8 +200,6 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
 /* BACK TO TOP BTN */
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 100;
@@ -200,18 +208,14 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
   height: 50px;
   border-radius: 50px;
   border: 3px solid white;
-  transition: all 0.4s;
   margin-right: calc(0.5rem + 1vh);
   margin-bottom: calc(0.5rem + 1vh);
   text-decoration: none;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.13);
 }
 .back-to-top:hover {
   background: #679dc6;
   color: #fff;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
 }
 .back-to-top .back-to-top__icon {
   font-size: 24px;
@@ -222,8 +226,6 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
 /* MESSAGE BTN */
 .message-btn {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
   right: 15px;
   bottom: 80px;
   z-index: 100;
@@ -232,21 +234,13 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
   height: 50px;
   border-radius: 50px;
   border: 3px solid white;
-  transition: all 0.4s;
   margin-right: calc(0.5rem + 1vh);
   margin-bottom: calc(0.5rem + 1vh);
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.13);
 }
-.message-btn:hover {
-  background: #679dc6;
-  color: #fff;
-}
-.message-btn.active {
-  visibility: visible;
-  opacity: 1;
-}
-.message-btn i {
+.message-btn .message-btn__icon {
   font-size: 24px;
   color: #fff;
   line-height: 0;
@@ -255,16 +249,33 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
 .checking:checked ~ .message-box {
   display: block;
 }
+.checking:checked ~ .message-btn {
+  background: #679dc6;
+}
+.checking:checked ~ .message-btn .message-btn__icon--open {
+  display: none;
+}
+.checking:not(:checked) ~ .message-btn {
+  background: #93c7ef;
+}
+.checking:not(:checked) ~ .message-btn:hover {
+  background: #679dc6;
+  color: #fff;
+}
+.checking:not(:checked) ~ .message-btn:not(:active) {
+  background: #93c7ef;
+}
+.checking:not(:checked) ~ .message-btn .message-btn__icon--close {
+  display: none;
+}
 
 .message-box {
   display: none;
   position: fixed;
-  opacity: 1;
   right: 40px;
   bottom: 160px;
   z-index: 100;
   background: white;
-  transition: all 0.4s;
   border-radius: 5px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.13);
 }
@@ -272,16 +283,31 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
   color: white;
   text-align: center;
   background: #93c7ef;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 .message-box .message-box__content {
   color: #706e6e;
   text-align: center;
 }
+.message-box .message-box__content .message-box__content__brand___img {
+  width: calc(2rem + 1vw);
+  height: calc(2rem + 1vw);
+}
+.message-box .message-box__content .message-box__content__brand___name {
+  font-family: "Dancing Script", cursive;
+  font-size: calc(0.8rem + 1vw);
+  color: #394855;
+}
 .message-box .message-box__content .message-box__content__icon {
   text-decoration: none;
   font-size: 30px;
   color: #eec051;
+}
+.message-box .message-box__content .fa-whatsapp {
+  color: #15b63a;
+}
+.message-box .message-box__content .fa-envelope-o {
+  color: rgb(225, 116, 116);
 }
 
 /* :.............................
@@ -397,9 +423,15 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
   color: white;
   position: relative;
   text-shadow: 0 0 4px #c7b893;
+  text-align: center;
 }
 .index_services .index_services__title h2 {
-  font-size: calc(2rem + 1vh);
+  font-size: calc(1rem + 1vh);
+}
+@media screen and (min-width: 576px) {
+  .index_services .index_services__title h2 {
+    font-size: calc(2rem + 1vh);
+  }
 }
 .index_services .index_services__card-block__card {
   transition: 0.5s;

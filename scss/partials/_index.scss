@@ -136,9 +136,14 @@ $index-services-url: (
         color:white;
         position: relative;
         text-shadow: 0 0 4px #c7b893;
+        text-align: center;
 
         h2 {
-            font-size: calc(2rem + 1vh);
+            font-size: calc(1rem + 1vh);
+
+            @media  screen and (min-width:variables.$media-size-small) {
+                font-size: calc(2rem + 1vh);
+            }
         }
     }
 

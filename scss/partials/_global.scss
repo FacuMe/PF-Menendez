@@ -66,6 +66,7 @@ body {
 
 nav {
     background-color: variables.$primary-color;
+    box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
 
     .navbar-brand {
         font-family: variables.$logo-font;
@@ -127,9 +128,11 @@ footer {
                 text-decoration: none;
                 font-size: 19px;
                 color: white;
+                transition: all 0.3s ease;
     
                 &:hover {
                     color: #587083a8;
+                    margin-left: 0.3rem;
                 }
             }
         }
@@ -166,14 +169,19 @@ footer {
         .footer_info__media-icons {
             @include variables.flex-row-center;
             gap: 30px;
+            @media screen and (min-width:variables.$media-size-large) {
+                padding-bottom: 2rem;
+            }
     
             .footer_info__media-icons__icon {
                 text-decoration: none;
                 font-size: 30px;
                 color: white;
+                transition: all 0.3s ease;
     
                 &:hover {
                     color: #587083a8;
+                    margin-top: 0.3rem;
                 }
             }
         }
@@ -210,8 +218,6 @@ footer {
 
 .back-to-top {
     position: fixed;
-    visibility: hidden;
-    opacity: 0;
     right: 15px;
     bottom: 15px;
     z-index: 100;
@@ -220,19 +226,14 @@ footer {
     height: 50px;
     border-radius: 50px;
     border: 3px solid white;
-    transition: all 0.4s;
     margin-right: calc(0.5rem + 1vh);
     margin-bottom: calc(0.5rem + 1vh);
     text-decoration: none;
+    box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
 
     &:hover {
         background: #679dc6;
         color: #fff;
-    }
-      
-    &.active {
-        visibility: visible;
-        opacity: 1;
     }
 
     .back-to-top__icon {
@@ -246,8 +247,6 @@ footer {
 
 .message-btn {
     position: fixed;
-    visibility: hidden;
-    opacity: 0;
     right: 15px;
     bottom: 80px;
     z-index: 100;
@@ -256,42 +255,51 @@ footer {
     height: 50px;
     border-radius: 50px;
     border: 3px solid white;
-    transition: all 0.4s;
     margin-right: calc(0.5rem + 1vh);
     margin-bottom: calc(0.5rem + 1vh);
     text-decoration: none;
     cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
 
-    &:hover {
-        background: #679dc6;
-        color: #fff;
-    }
-
-    &.active {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    i {
+    .message-btn__icon {
         font-size: 24px;
         color: #fff;
         line-height: 0;
     }
 }
 
-.checking:checked ~ .message-box{
-    display: block;
+.checking {
+    &:checked ~ .message-box {
+        display: block;
+    }
+    &:checked ~ .message-btn {
+        background: #679dc6;
+        .message-btn__icon--open {
+            display: none;
+        }
+    }
+    &:not(:checked) ~ .message-btn {
+        background: variables.$secondary-color;
+        &:hover {
+            background: #679dc6;
+            color: #fff;
+        }
+        &:not(:active) {
+            background: variables.$secondary-color;
+        }
+        .message-btn__icon--close {
+            display: none;
+        }
+    }
 }
 
 .message-box {
     display: none;
     position: fixed;
-    opacity: 1;
     right: 40px;
     bottom: 160px;
     z-index: 100;
     background: white;
-    transition: all 0.4s;
     border-radius: 5px;
     box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
 
@@ -299,17 +307,35 @@ footer {
         color: white;
         text-align: center;
         background: variables.$secondary-color;
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
     }
 
     .message-box__content {
         color: #706e6e;
         text-align: center;
 
+        .message-box__content__brand___img {
+            @include variables.sizes(calc(2rem + 1vw),calc(2rem + 1vw));
+        }
+
+        .message-box__content__brand___name {
+            font-family: variables.$logo-font;
+            font-size: calc(0.8rem + 1vw);
+            color: #394855;
+        }
+
         .message-box__content__icon {
             text-decoration: none;
             font-size: 30px;
             color: variables.$primary-color;
+        }
+
+        .fa-whatsapp {
+            color: #15b63a;
+        }
+
+        .fa-envelope-o {
+            color: rgb(225, 116, 116);
         }
     }
 }

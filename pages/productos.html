@@ -463,13 +463,43 @@
                 </section>
             </div>
         </div>
+        <!-- Fixed buttons -->
+        <section class="fixed-buttons">
+            <div>
+                <input type="checkbox" id="message-btn" class="d-none checking"/>
+                <label class="message-btn d-flex align-items-center justify-content-center active" for="message-btn">
+                        <i class="fa fa-comments-o message-btn__icon message-btn__icon--open" aria-hidden="true"></i>
+                        <i class="fa fa-times message-btn__icon message-btn__icon--close" aria-hidden="true"></i>
+                </label>
+                <div class="col-9 col-sm-6 col-md-3 message-box">
+                    <div class="message-box__title pt-2 pb-2">
+                        <h5>¡Contactanos!</h5>
+                        <h6>Escribinos por Whatsapp o mandanos un mensaje</h6>
+                    </div>
+                    <div class="message-box__content pt-2 pb-2">
+                        <p>En minutos te estaremos respondiendo...</p>
+                        <div class="pt-3 pb-3 d-flex justify-content-around align-items-center">
+                            <div class="d-flex align-items-center message-box__content__brand">
+                                <img src="../img/favicon.jpg" class="message-box__content__brand___img" alt="Milovet veterinaria logo">
+                                <p class="ps-2 message-box__content__brand___name">Milovet</p>
+                            </div>
+                            <a href="#" class="fa fa-whatsapp message-box__content__icon"></a>
+                            <a href="../pages/contacto.html#contact-form" class="fa fa-envelope-o message-box__content__icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+                <i class="fa fa-arrow-up back-to-top__icon" aria-hidden="true"></i>
+            </a>
+        </section>
     </main>
 
     <footer>
         <div class="container-fluid">
             <div class="row text-white">
                 <div class="col-md-4 order-md-1 ps-5 mt-3 mb-3 d-flex align-items-start footer_nav">
-                    <ul class="d-flex flex-column justify-content-center footer_nav__list">
+                    <ul class="col-3 d-flex flex-column justify-content-center footer_nav__list">
                         <li><a href="../index.html" class="footer_nav__list__item">Inicio</a></li>
                         <li><a href="./productos.html" class="footer_nav__list__item">Productos</a></li>
                         <li><a href="./servicios.html" class="footer_nav__list__item">Servicios</a></li>
