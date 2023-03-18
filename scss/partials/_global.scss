@@ -17,6 +17,7 @@
 body {
     background-image: url(../img/index\ background-huellas\(3\).png);
     background-size: contain;
+    min-height: 100vh;
 }
 
 hr {
@@ -86,12 +87,13 @@ nav {
             text-decoration:none;
             border-top: 1px solid transparent;
             border-bottom: 1px solid transparent;
-            transition: 0.2s ease-out;
+            transition: 0.3s ease-out;
 
             &:hover {
-                border-top: 1px solid white;
-                border-bottom: 1px solid white;
+                border-top: 1.5px solid white;
+                border-bottom: 1.5px solid white;
                 color: #587083a8;
+                transform: scale(1.15);
             }
         }
     }
@@ -138,23 +140,33 @@ footer {
         }
     }
 
-    .footer_brand__contenedor {
-        gap: 2rem;
-
-        .footer_brand__contenedor__img {
-            @include variables.sizes(80px, 80px);
+    .footer_brand {
+        padding-right: calc(6rem + 1vw);
+        padding-left: calc(1.8rem + 1vw);
+        text-align: center;
+        @media screen and (min-width:variables.$media-size-medium) {
+            padding-left: 0;
+            padding-right: 0;
         }
 
-        .footer_brand__contenedor__name {
-            font-family: variables.$logo-font;
-            font-size: 40px;
+        .footer_brand__contenedor {
+            gap: 2rem;
+    
+            .footer_brand__contenedor__img {
+                @include variables.sizes(80px, 80px);
+            }
+    
+            .footer_brand__contenedor__name {
+                font-family: variables.$logo-font;
+                font-size: 40px;
+            }
         }
-    }
-
-    .footer_brand__division {
-        @include variables.sizes(100%, 1.5px);
-        background-color: white;
-        border: none;
+    
+        .footer_brand__division {
+            @include variables.sizes(100%, 1.5px);
+            background-color: white;
+            border: none;
+        }
     }
 
     .footer_info {
@@ -169,6 +181,7 @@ footer {
         .footer_info__media-icons {
             @include variables.flex-row-center;
             gap: 30px;
+            padding-bottom: calc(0.5rem + 1vw);
             @media screen and (min-width:variables.$media-size-large) {
                 padding-bottom: 2rem;
             }
@@ -260,7 +273,6 @@ footer {
     text-decoration: none;
     cursor: pointer;
     box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
-
     .message-btn__icon {
         font-size: 24px;
         color: #fff;
@@ -280,12 +292,12 @@ footer {
     }
     &:not(:checked) ~ .message-btn {
         background: variables.$secondary-color;
+        &:not(:active) {
+            background: variables.$secondary-color;
+        }
         &:hover {
             background: #679dc6;
             color: #fff;
-        }
-        &:not(:active) {
-            background: variables.$secondary-color;
         }
         .message-btn__icon--close {
             display: none;
@@ -324,18 +336,28 @@ footer {
             color: #394855;
         }
 
-        .message-box__content__icon {
+        .message-box__content__box {
+            @include variables.sizes(calc(2rem + 1vw), calc(2rem + 1vw));
+            box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 30px;
-            color: variables.$primary-color;
-        }
-
-        .fa-whatsapp {
-            color: #15b63a;
-        }
-
-        .fa-envelope-o {
-            color: rgb(225, 116, 116);
+            transition: all 0.2s ease;
+            &:hover{
+                box-shadow: 0 8px 10px rgba(0,0,0,.23), 0 0 8px rgba(0,0,0,.20);
+                transform: scale(1.05);
+            }
+            .message-box__content__icon {
+                text-decoration: none;
+                font-size: 30px;
+            }
+    
+            .message-box__content__icon--whatsapp {
+                color: #15b63a;
+            }
+    
+            .message-box__content__icon--envelope {
+                color: rgb(225, 116, 116);
+            }
         }
     }
 }
