@@ -58,7 +58,10 @@ $index-services-url: (
     text-align: justify;
 
     .header_main_content__title {
-        font-size: calc(1.560rem + 1.5vw);
+        font-size: calc(1.8rem + 1.5vw);
+        @media  screen and (min-width:variables.$media-size-medium) {
+            font-size: calc(1.560rem + 1.5vw);
+        }
     }
 
     .header_main_content__btn {
@@ -139,7 +142,7 @@ $index-services-url: (
         text-align: center;
 
         h2 {
-            font-size: calc(1rem + 1vh);
+            font-size: calc(1.4rem + 1vh);
 
             @media  screen and (min-width:variables.$media-size-small) {
                 font-size: calc(2rem + 1vh);

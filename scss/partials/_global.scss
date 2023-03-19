@@ -88,12 +88,13 @@ nav {
             border-top: 1px solid transparent;
             border-bottom: 1px solid transparent;
             transition: 0.3s ease-out;
-
-            &:hover {
-                border-top: 1.5px solid white;
-                border-bottom: 1.5px solid white;
-                color: #587083a8;
-                transform: scale(1.15);
+            @media screen and (min-width:960px){
+                &:hover {
+                    border-top: 1.5px solid white;
+                    border-bottom: 1.5px solid white;
+                    color: #587083a8;
+                    transform: scale(1.15);
+                }
             }
         }
     }
@@ -101,9 +102,12 @@ nav {
     .navbar__cart-icon {
         color: white;
         cursor: pointer;
-
-        &:hover {
-            color: #587083a8;
+        transition: 0.3s ease-out;
+        @media screen and (min-width:960px){
+            &:hover {
+                color: #587083a8;
+                transform: scale(1.15);
+            }
         }
     }
 
@@ -131,10 +135,11 @@ footer {
                 font-size: 19px;
                 color: white;
                 transition: all 0.3s ease;
-    
-                &:hover {
-                    color: #587083a8;
-                    margin-left: 0.3rem;
+                @media screen and (min-width:960px){
+                    &:hover {
+                        color: #587083a8;
+                        margin-left: 0.3rem;
+                    }
                 }
             }
         }
@@ -191,10 +196,11 @@ footer {
                 font-size: 30px;
                 color: white;
                 transition: all 0.3s ease;
-    
-                &:hover {
-                    color: #587083a8;
-                    margin-top: 0.3rem;
+                @media screen and (min-width:960px){
+                    &:hover {
+                        color: #587083a8;
+                        margin-top: 0.3rem;
+                    }
                 }
             }
         }
@@ -339,7 +345,7 @@ footer {
         .message-box__content__box {
             @include variables.sizes(calc(2rem + 1vw), calc(2rem + 1vw));
             box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
-            border-radius: 5px;
+            border-radius: 25px;
             text-decoration: none;
             transition: all 0.2s ease;
             &:hover{
@@ -350,7 +356,6 @@ footer {
                 text-decoration: none;
                 font-size: 30px;
             }
-    
             .message-box__content__icon--whatsapp {
                 color: #15b63a;
             }

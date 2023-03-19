@@ -60,7 +60,7 @@
     .services__banner__overlay {
         @extend .overlay;
         background-color: variables.$primary-color;
-        opacity: 0.3;
+        opacity: 0.1;
     }
 
     .services__banner__title {

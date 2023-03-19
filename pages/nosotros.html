@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milovet Veterinaria - Nosotros</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../img/favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- styles.css -->
@@ -67,13 +69,13 @@
                 <div class="row m-3 justify-content-center gap-5 about">
                     <div class="col-md-5 col-xl-4 pt-3 d-flex flex-column">
                         <div>
-                            <h2 class="about__title">
+                            <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true" class="about__title">
                                 Quiénes <strong>somos</strong>
                             </h2>
-                            <h4 class="about__subtitle pt-3">
+                            <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" class="about__subtitle pt-3">
                                 Hace 20 años que nos dedicamos con <strong>pasión, dedicación y amor</strong> a la atención veterinaria tanto en consultorio como en domicilio.
                             </h4>
-                            <p class="about__description pt-3">
+                            <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" class="about__description pt-3">
                                 Tenemos una gran experiencia en clínica médica, cirugía y en la <strong>atención domiciliaria.</strong>
                                 <br>
                                 La prioridad de nuestro servicio a domicilio es el cuidado de la salud de tu mascota y esto es posible en un <strong>entorno cómodo, acogedor 
@@ -87,17 +89,17 @@
                             <a href="../pages/contacto.html"><button type="button" class="btn btn-light mt-4 about__btn">Deseo contactarme</button></a>
                         </div>
                     </div>
-                    <div class="col-md-5 col-xl-4 pt-3 d-flex flex-column justify-content-center align-items-center">
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" class="col-md-5 col-xl-4 pt-3 d-flex flex-column justify-content-center align-items-center">
                         <img src="../img/about-us-img.png" class="img-fluid about__img" alt="Médica sosteniendo perro">
                     </div>
                 </div>
                 <!-- banner -->
-                <div class="row pb-4 justify-content-center about__banner">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" class="row pb-4 justify-content-center about__banner">
                     <div class="col-10 pt-4 pb-4 col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
                         <h3 class="about__banner__description">
                             ¡Dale a tus mascotas la <strong>atención que se merecen</strong>!
                         </h3>
-                        <img src="../img/about-us-bottom-img.jpeg" class="img-fluid" alt="Perros y gatos asomando">
+                        <img src="../img/about-us-bottom-img.png" class="img-fluid" alt="Perros y gatos asomando">
                     </div>
                 </div>
             </div>
@@ -106,7 +108,7 @@
         <section class="fixed-buttons">
             <div>
                 <input type="checkbox" id="message-btn" class="d-none checking"/>
-                <label class="message-btn d-flex align-items-center justify-content-center active" for="message-btn">
+                <label data-aos="zoom-in" data-aos-duration="1700" class="message-btn d-flex align-items-center justify-content-center active" for="message-btn">
                     <i class="fa fa-comments-o message-btn__icon message-btn__icon--open" aria-hidden="true"></i>
                     <i class="fa fa-times message-btn__icon message-btn__icon--close" aria-hidden="true"></i>
                 </label>
@@ -119,20 +121,20 @@
                         <p>En minutos te estaremos respondiendo...</p>
                         <div class="pt-3 pb-3 d-flex justify-content-around align-items-center">
                             <div class="d-flex align-items-center message-box__content__brand">
-                                <img src="../img/favicon.jpg" class="message-box__content__brand___img" alt="Milovet veterinaria logo">
+                                <img src="../img/message-box-brand-icon.png" class="message-box__content__brand___img" alt="Milovet veterinaria logo">
                                 <p class="ps-2 message-box__content__brand___name">Milovet</p>
                             </div>
                             <a href="#" class="message-box__content__box d-flex justify-content-center align-items-center">
                                 <i class="fa fa-whatsapp message-box__content__icon message-box__content__icon--whatsapp" aria-hidden="true"></i>
                             </a>
-                            <a href="./pages/contacto.html#contact-form" class="message-box__content__box d-flex justify-content-center align-items-center">
+                            <a href="../pages/contacto.html#contact-form" class="message-box__content__box d-flex justify-content-center align-items-center">
                                 <i class="fa fa-envelope-o message-box__content__icon message-box__content__icon--envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+            <a href="#" data-aos="zoom-in" data-aos-duration="300" class="back-to-top d-flex align-items-center justify-content-center active">
                 <i class="fa fa-arrow-up back-to-top__icon" aria-hidden="true"></i>
             </a>
         </section>
@@ -183,5 +185,10 @@
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
