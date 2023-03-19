@@ -143,3 +143,112 @@
     }
 }
 
+.modal {
+    color: #706e6e;
+
+    .modal__btn__shopping {
+        font-size: 18px;
+        background-color: variables.$primary-color;
+        border: none;
+
+        &:hover {
+            background-color: #ddb14a;
+            border: none;
+        }
+    }
+
+    .modal__btn__cart {
+        font-size: 18px;
+        background-color: variables.$secondary-color;
+        border: none;
+
+        &:hover {
+            background-color: #4e8fc1;
+            border: none;
+        }
+    }
+
+    .success-icon {
+        display: inline-block;
+        width: 4em;
+        height: 4em;
+        font-size: 20px;
+        border-radius: 50%;
+        border: 4px solid lighten(rgb(66, 181, 66), 20%);
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+        transform-origin: center;
+        animation: showSuccess 180ms ease-in-out;
+        transform: scale(1);
+
+        &__tip,
+        &__long {
+            display: block;
+            position: absolute;
+            height: 4px;
+            background-color: lighten(rgb(66, 181, 66), 20%);
+            border-radius: 10px;
+        }
+
+        &__tip {
+            width: 1.2em;
+            top: 2.15em;
+            left: 0.7em;
+            transform: rotate(45deg);
+            animation: tipInPlace 300ms ease-in-out;
+            animation-fill-mode: forwards;
+            animation-delay: 180ms;
+            visibility: hidden;
+        }
+
+        &__long {
+            width: 2em;
+            transform: rotate(-45deg);
+            top: 1.6em;
+            left: 1.35em;
+            animation: longInPlace 140ms ease-in-out;
+            animation-fill-mode: forwards;
+            visibility: hidden;
+            animation-delay: 300ms + 140ms;
+        }
+
+        @keyframes showSuccess {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes tipInPlace {
+            from {
+                width: 0em;
+                top: 0em;
+                left: -0.8em;
+            }
+            to {
+                width: 1.2em;
+                top: 2em;
+                left: 0.6em;
+                visibility: visible;
+            }
+        }
+
+        @keyframes longInPlace {
+            from {
+                width: 0em;
+                top: 2.5em;
+                left: 1.6em;
+            }
+            to {
+                width: 2em;
+                top: 1.75em;
+                left: 1.25em;
+                visibility: visible;
+            }
+        }
+    }  
+}
+

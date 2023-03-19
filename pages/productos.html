@@ -133,7 +133,7 @@
                                 <p class="products__block__item__box__title">Comida</p>
                                 <p class="products__block__item__box__price">$400</p>           
                                 <div>
-                                    <button type="button" class="btn btn-primary products__block__item__box__btn">Agregar al carrito</button>       
+                                    <button type="button" class="btn btn-primary products__block__item__box__btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Agregar al carrito</button>       
                                 </div>  
                             </div>
                         </div>
@@ -466,6 +466,24 @@
                 </section>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="modal-title fs-5 mt-1 mb-4 text-center" id="staticBackdropLabel">Tu producto fue agregado al carrito con éxito</h5>
+                        <div class="success-icon mb-4">
+                            <div class="success-icon__tip"></div>
+                            <div class="success-icon__long"></div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center gap-3 mb-3">
+                            <button type="button" class="btn btn-secondary modal__btn__shopping" data-bs-dismiss="modal">Seguir comprando</button>
+                            <button type="button" class="btn btn-primary modal__btn__cart" data-bs-dismiss="modal">Ir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Fixed buttons -->
         <section class="fixed-buttons">
             <div>
@@ -486,7 +504,7 @@
                                 <img src="../img/message-box-brand-icon.webp" class="message-box__content__brand___img" alt="Milovet veterinaria logo">
                                 <p class="ps-2 message-box__content__brand___name">Milovet</p>
                             </div>
-                            <a href="#" class="message-box__content__box d-flex justify-content-center align-items-center">
+                            <a href="https://www.whatsapp.com" class="message-box__content__box d-flex justify-content-center align-items-center">
                                 <i class="fa fa-whatsapp message-box__content__icon message-box__content__icon--whatsapp" aria-hidden="true"></i>
                             </a>
                             <a href="../pages/contacto.html#contact-form" class="message-box__content__box d-flex justify-content-center align-items-center">
@@ -526,9 +544,9 @@
                         </div>
                     </div>
                     <div class="footer_info__media-icons">
-                        <a href="#" class="fa fa-facebook footer_info__media-icons__icon"></a>
-                        <a href="#" class="fa fa-instagram footer_info__media-icons__icon"></a>
-                        <a href="#" class="fa fa-twitter footer_info__media-icons__icon"></a>
+                        <a href="https://www.facebook.com" class="fa fa-facebook footer_info__media-icons__icon"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram footer_info__media-icons__icon"></a>
+                        <a href="https://www.twitter.com" class="fa fa-twitter footer_info__media-icons__icon"></a>
                     </div>
                 </div>
                 <div class="col-md-4 order-md-2 mt-4 d-flex flex-column justify-content-center align-items-center footer_brand">

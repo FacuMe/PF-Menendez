@@ -356,7 +356,10 @@ footer {
             }
             .message-box__content__icon {
                 text-decoration: none;
-                font-size: 30px;
+                font-size: 20px;
+                @media screen and (min-width:variables.$media-size-medium) {
+                    font-size: 28px;
+                }
             }
             .message-box__content__icon--whatsapp {
                 color: #15b63a;
