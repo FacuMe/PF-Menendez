@@ -26,6 +26,7 @@
   margin: 0;
   padding: 0;
   font-family: "Itim", cursive;
+  font-display: swap;
 }
 
 body {
@@ -75,6 +76,7 @@ nav {
 }
 nav .navbar-brand {
   font-family: "Dancing Script", cursive;
+  font-display: swap;
   font-size: 40px;
   color: white;
 }
