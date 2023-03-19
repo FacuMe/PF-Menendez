@@ -29,7 +29,7 @@
 }
 
 body {
-  background-image: url(../img/index\ background-huellas\(3\).png);
+  background-image: url(../img/index\ background-huellas\(3\).webp);
   background-size: contain;
   min-height: 100vh;
 }
@@ -206,7 +206,7 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   color: white;
   font-size: calc(1.5rem + 1vw);
   position: relative;
-  background-image: url(../img/sections-banner.jpg);
+  background-image: url(../img/sections-banner.webp);
   background-position: center right;
 }
 .section_header .section_header__overlay {
@@ -450,7 +450,7 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url(../img/index-service-background.jpg);
+  background-image: url(../img/index-service-background.webp);
   background-attachment: fixed;
   background-size: cover;
   background-position: 75%;
@@ -532,22 +532,22 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   text-shadow: 0 0 4px #394855;
 }
 .index_services .index_services__card-block__card .index_services__card-block__card__content--service-1 {
-  background-image: url(../img/INDEX-SERVICE-CARD-DOG-PUG.jpg);
+  background-image: url(../img/INDEX-SERVICE-CARD-DOG-PUG.webp);
   background-size: cover;
   background-position: 75%;
 }
 .index_services .index_services__card-block__card .index_services__card-block__card__content--service-2 {
-  background-image: url(../img/INDEX-SERVICE-CARD-DOG-BEAGLE.jpg);
+  background-image: url(../img/INDEX-SERVICE-CARD-DOG-BEAGLE.webp);
   background-size: cover;
   background-position: 75%;
 }
 .index_services .index_services__card-block__card .index_services__card-block__card__content--service-3 {
-  background-image: url(../img/INDEX-SERVICE-CARD-BLACK-CAT.jpg);
+  background-image: url(../img/INDEX-SERVICE-CARD-BLACK-CAT.webp);
   background-size: cover;
   background-position: 75%;
 }
 .index_services .index_services__card-block__card .index_services__card-block__card__content--service-4 {
-  background-image: url(../img/INDEX-SERVICE-CARD-WHITE-CAT.jpg);
+  background-image: url(../img/INDEX-SERVICE-CARD-WHITE-CAT.webp);
   background-size: cover;
   background-position: 75%;
 }
@@ -751,7 +751,7 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   color: white;
   font-size: calc(1.5rem + 1vw);
   position: relative;
-  background-image: url(../img/services-banner.png);
+  background-image: url(../img/services-banner.webp);
   background-position: center right;
 }
 .services__banner .services__banner__overlay {
@@ -867,7 +867,7 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
 .contact_banner__container {
   color: white;
   position: relative;
-  background-image: url(../img/contact-banner.jpg);
+  background-image: url(../img/contact-banner.webp);
   background-position: center right;
   background-attachment: fixed;
 }

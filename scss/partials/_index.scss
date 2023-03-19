@@ -2,10 +2,10 @@
 
 // MAP FOR INDEX SERVICES BG-IMG URL //
 $index-services-url: (
-    service-1: '../img/INDEX-SERVICE-CARD-DOG-PUG.jpg',
-    service-2: '../img/INDEX-SERVICE-CARD-DOG-BEAGLE.jpg',
-    service-3: '../img/INDEX-SERVICE-CARD-BLACK-CAT.jpg',
-    service-4: '../img/INDEX-SERVICE-CARD-WHITE-CAT.jpg',
+    service-1: '../img/INDEX-SERVICE-CARD-DOG-PUG.webp',
+    service-2: '../img/INDEX-SERVICE-CARD-DOG-BEAGLE.webp',
+    service-3: '../img/INDEX-SERVICE-CARD-BLACK-CAT.webp',
+    service-4: '../img/INDEX-SERVICE-CARD-WHITE-CAT.webp',
 );
 
 /* :.............................
@@ -124,7 +124,7 @@ $index-services-url: (
     @include variables.flex-column-center;
     align-items: center;
     position: relative;
-    background-image: url(../img/index-service-background.jpg);
+    background-image: url(../img/index-service-background.webp);
     background-attachment: fixed;
     background-size:cover;
     background-position: 75%;
