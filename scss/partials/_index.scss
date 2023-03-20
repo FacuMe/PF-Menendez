@@ -127,7 +127,7 @@ $index-services-url: (
     background-image: url(../img/index-service-background.webp);
     background-attachment: fixed;
     background-size:cover;
-    background-position: 75%;
+    background-position: center;
 
     .index_services__overlay {
         @extend .overlay;

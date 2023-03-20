@@ -55,7 +55,7 @@
     font-size: calc(1.5rem + 1vw);
     position: relative;
     background-image: url(../img/services-banner.webp);
-    background-position: center right;
+    background-position: center;
 
     .services__banner__overlay {
         @extend .overlay;

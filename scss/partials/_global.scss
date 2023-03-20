@@ -111,9 +111,11 @@ nav {
         color: white;
         cursor: pointer;
         transition: 0.3s ease-out;
+        &:hover {
+            color: #587083a8;
+        }
         @media screen and (min-width:960px){
             &:hover {
-                color: #587083a8;
                 transform: scale(1.15);
             }
         }
@@ -143,9 +145,11 @@ footer {
                 font-size: 19px;
                 color: white;
                 transition: all 0.3s ease;
+                &:hover {
+                    color: #587083a8;
+                }
                 @media screen and (min-width:960px){
                     &:hover {
-                        color: #587083a8;
                         margin-left: 0.3rem;
                     }
                 }
@@ -204,9 +208,11 @@ footer {
                 font-size: 30px;
                 color: white;
                 transition: all 0.3s ease;
+                &:hover {
+                    color: #587083a8;
+                }
                 @media screen and (min-width:960px){
                     &:hover {
-                        color: #587083a8;
                         margin-top: 0.3rem;
                     }
                 }
@@ -296,32 +302,11 @@ footer {
         color: #fff;
         line-height: 0;
     }
-}
-
-.checking {
-    &:checked ~ .message-box {
-        display: block;
-    }
-    &:checked ~ .message-btn {
-        background: #679dc6;
-        .message-btn__icon--open {
-            display: none;
-        }
-    }
-    &:not(:checked) ~ .message-btn {
-        background: variables.$secondary-color;
-        &:not(:active) {
-            background: variables.$secondary-color;
-        }
-        @media screen and (min-width:960px) {
-            &:hover {
-                background: #679dc6;
-                color: #fff;
-            }
-        }
-        .message-btn__icon--close {
-            display: none;
-        }
+    .message-btn__icon--open {
+        animation: rotate-in-center-left .6s cubic-bezier(.25,.46,.45,.94) both;
+    } 
+    .message-btn__icon--close {
+        animation: rotate-in-center-right .6s cubic-bezier(.25,.46,.45,.94) both;
     }
 }
 
@@ -334,6 +319,7 @@ footer {
     background: white;
     border-radius: 5px;
     box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
+    animation: fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) both;
 
     .message-box__title {
         color: white;
@@ -368,7 +354,7 @@ footer {
             }
             .message-box__content__icon {
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 22px;
                 @media screen and (min-width:variables.$media-size-medium) {
                     font-size: 28px;
                 }
@@ -380,6 +366,63 @@ footer {
             .message-box__content__icon--envelope {
                 color: rgb(225, 116, 116);
             }
+        }
+    }
+}
+
+.checking {
+    &:checked ~ .message-box {
+        display: block;
+        @keyframes fade-in-bottom {
+            0% {
+                transform: translateY(50px);
+                opacity:0
+            }
+            100% {
+                transform:translateY(0);
+                opacity:1
+            }
+        }
+    }
+    &:checked ~ .message-btn {
+        background: #679dc6;
+        .message-btn__icon--close {
+            @keyframes rotate-in-center-right {
+                0% {
+                    transform:rotate(-360deg);opacity:0
+                }
+                100% {
+                    transform:rotate(0);opacity:1
+                }
+            }
+        }
+        .message-btn__icon--open {
+            display: none;
+        }
+    }
+    &:not(:checked) ~ .message-btn {
+        background: variables.$secondary-color;
+        @media screen and (min-width:960px) {
+            &:hover {
+                background: #679dc6;
+                color: #fff;
+            }
+        }
+        &:not(:active) {
+            background: variables.$secondary-color;
+        }
+        .message-btn__icon--open {
+            @keyframes rotate-in-center-left {
+                0% {
+                    transform:rotate(360deg);opacity:0
+                }
+                100% {
+                    transform:rotate(0);opacity:1
+                }
+            }
+        }
+        .message-btn__icon--close {
+            display: none;
         }
     }
 }
