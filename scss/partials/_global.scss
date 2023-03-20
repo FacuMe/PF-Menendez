@@ -7,7 +7,7 @@
    .................................
 */
 
-/*RESET HTML & BOOTSTRAP STYLES*/
+/*RESET HTML, BOOTSTRAP & AOS STYLES*/
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +33,10 @@ p {
 ul {
     padding: 0;
     margin: 0;
+}
+
+.aos-init[data-aos][data-aos].aos-animate {
+    transform: unset;
 }
 
 /* GRID */
@@ -90,11 +94,13 @@ nav {
             border-top: 1px solid transparent;
             border-bottom: 1px solid transparent;
             transition: 0.3s ease-out;
+            &:hover {
+                border-top: 1.5px solid white;
+                border-bottom: 1.5px solid white;
+                color: #587083a8;
+            }
             @media screen and (min-width:960px){
                 &:hover {
-                    border-top: 1.5px solid white;
-                    border-bottom: 1.5px solid white;
-                    color: #587083a8;
                     transform: scale(1.15);
                 }
             }
@@ -217,7 +223,8 @@ footer {
     font-size: calc(1.5rem + 1vw);
     position: relative;
     background-image: url(../img/sections-banner.webp);
-    background-position: center right;
+    background-size: cover;
+    background-position: 75%;
 
     .section_header__overlay {
         @extend .overlay;
@@ -251,12 +258,15 @@ footer {
     margin-bottom: calc(0.5rem + 1vh);
     text-decoration: none;
     box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
-
-    &:hover {
-        background: #679dc6;
-        color: #fff;
+    @media screen and (min-width:960px) {
+        &:hover {
+            background: #679dc6;
+            color: #fff;
+        }
     }
-
+    &:active {
+        background: #679dc6;
+    }
     .back-to-top__icon {
         font-size: 24px;
         color: #fff;
@@ -303,9 +313,11 @@ footer {
         &:not(:active) {
             background: variables.$secondary-color;
         }
-        &:hover {
-            background: #679dc6;
-            color: #fff;
+        @media screen and (min-width:960px) {
+            &:hover {
+                background: #679dc6;
+                color: #fff;
+            }
         }
         .message-btn__icon--close {
             display: none;

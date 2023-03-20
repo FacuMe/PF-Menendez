@@ -40,8 +40,9 @@
     color: white;
     position: relative;
     background-image: url(../img/contact-banner.webp);
-    background-position: center right;
+    background-position: 40%;
     background-attachment: fixed;
+    background-size: cover;
 
     .contact_banner__container__overlay {
         @extend .overlay;

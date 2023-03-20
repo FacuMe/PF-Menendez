@@ -21,7 +21,7 @@
 
    .................................
 */
-/*RESET HTML & BOOTSTRAP STYLES*/
+/*RESET HTML, BOOTSTRAP & AOS STYLES*/
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +47,10 @@ p {
 ul {
   padding: 0;
   margin: 0;
+}
+
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
 }
 
 /* GRID */
@@ -94,11 +98,13 @@ nav .navbar-nav__list .navbar-nav__list__item__link {
   border-bottom: 1px solid transparent;
   transition: 0.3s ease-out;
 }
+nav .navbar-nav__list .navbar-nav__list__item__link:hover {
+  border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;
+  color: rgba(88, 112, 131, 0.6588235294);
+}
 @media screen and (min-width: 960px) {
   nav .navbar-nav__list .navbar-nav__list__item__link:hover {
-    border-top: 1.5px solid white;
-    border-bottom: 1.5px solid white;
-    color: rgba(88, 112, 131, 0.6588235294);
     transform: scale(1.15);
   }
 }
@@ -209,7 +215,8 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   font-size: calc(1.5rem + 1vw);
   position: relative;
   background-image: url(../img/sections-banner.webp);
-  background-position: center right;
+  background-size: cover;
+  background-position: 75%;
 }
 .section_header .section_header__overlay {
   background-color: #7cc5fc;
@@ -239,9 +246,14 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   text-decoration: none;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.13);
 }
-.back-to-top:hover {
+@media screen and (min-width: 960px) {
+  .back-to-top:hover {
+    background: #679dc6;
+    color: #fff;
+  }
+}
+.back-to-top:active {
   background: #679dc6;
-  color: #fff;
 }
 .back-to-top .back-to-top__icon {
   font-size: 24px;
@@ -287,9 +299,11 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
 .checking:not(:checked) ~ .message-btn:not(:active) {
   background: #93c7ef;
 }
-.checking:not(:checked) ~ .message-btn:hover {
-  background: #679dc6;
-  color: #fff;
+@media screen and (min-width: 960px) {
+  .checking:not(:checked) ~ .message-btn:hover {
+    background: #679dc6;
+    color: #fff;
+  }
 }
 .checking:not(:checked) ~ .message-btn .message-btn__icon--close {
   display: none;
@@ -972,8 +986,9 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon {
   color: white;
   position: relative;
   background-image: url(../img/contact-banner.webp);
-  background-position: center right;
+  background-position: 40%;
   background-attachment: fixed;
+  background-size: cover;
 }
 .contact_banner__container .contact_banner__container__overlay {
   background-color: #eec051;
