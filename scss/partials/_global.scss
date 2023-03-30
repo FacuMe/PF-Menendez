@@ -21,6 +21,11 @@ body {
     min-height: 100vh;
 }
 
+body.modal-open {
+    overflow: auto !important;
+    padding-right: 0 !important;
+}
+
 hr {
     opacity: 1;
 }
@@ -245,6 +250,13 @@ footer {
             font-size: calc(2rem + 1vw);
             letter-spacing: .2rem;
         }
+
+        .section_header__title__track {
+            font-size: 1.5rem;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
     }
 }
 
@@ -321,11 +333,19 @@ footer {
     box-shadow: 0 6px 10px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.13);
     animation: fade-in-bottom .6s cubic-bezier(.39,.575,.565,1.000) both;
 
-    .message-box__title {
+    .message-box__heading {
         color: white;
         text-align: center;
         background: variables.$secondary-color;
         border-radius: 5px 5px 0 0;
+        .message-box__heading__title {
+            font-size: 1.25rem;
+            margin-bottom: .5rem;
+        }
+        .message-box__heading__subtitle {
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
     }
 
     .message-box__content {

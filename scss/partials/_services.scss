@@ -20,8 +20,11 @@
     }
     
     .services__service__description {
-        color:#888585;
+        color: variables.$font-main-color;
         text-align: justify;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.2;
     }
 
     .services__service__info__icon {
@@ -31,7 +34,7 @@
     
     .services__service__info__content {
         font-size: calc(1.2rem + 1vw);
-        color:#888585;
+        color: variables.$font-main-color;
 
         @media  screen and (min-width:variables.$media-size-small) {
             font-size: calc(0.9rem + 1vw);

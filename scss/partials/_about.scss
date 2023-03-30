@@ -18,11 +18,15 @@
     }
 
     .about__subtitle {
-        color:#706e6e;
+        color: variables.$font-main-color;
+        font-size: calc(1.275rem + .3vw);
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
     }
     
     .about__description {
-        color:#706e6e;
+        color: variables.$font-main-color;
         font-size: calc(0.9rem + 1vw);
 
         @media screen and (min-width:variables.$media-size-small) {

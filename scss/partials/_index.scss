@@ -58,9 +58,18 @@ $index-services-url: (
     text-align: justify;
 
     .header_main_content__title {
+        color: variables.$font-main-color;
         font-size: calc(1.8rem + 1.5vw);
         @media  screen and (min-width:variables.$media-size-medium) {
             font-size: calc(1.560rem + 1.5vw);
+        }
+    }
+
+    .header_main_content__subtitle {
+        color: variables.$font-main-color;
+        font-size: calc(1.1rem + 1.5vw);
+        @media  screen and (min-width:variables.$media-size-medium) {
+            font-size: calc(0.55rem + 1.5vw);
         }
     }
 
@@ -103,6 +112,7 @@ $index-services-url: (
 
     .carousel__slide__content__title {
         font-size: calc(1.5rem + 1vw);
+        line-height: 1.2;
     }
 
     .carousel__slide__content__btn {
@@ -131,21 +141,22 @@ $index-services-url: (
 
     .index_services__overlay {
         @extend .overlay;
-        background-color: variables.$secondary-color;
+        background-color: #76c4f5;
         opacity: 0.85;
     }
 
     .index_services__title {
         color:white;
         position: relative;
-        text-shadow: 0 0 4px #c7b893;
+        text-shadow: 0 0 4px #323e49;
         text-align: center;
 
         h2 {
-            font-size: calc(1.4rem + 1vh);
+            font-size: calc(1.8rem + 1vw);
+            letter-spacing: calc(0.1rem + 0.1vw);
 
             @media  screen and (min-width:variables.$media-size-small) {
-                font-size: calc(2rem + 1vh);
+                font-size: calc(1.6rem + 1vw);
             }
         }
     }
@@ -207,12 +218,18 @@ $index-services-url: (
                 color: white;
                 padding-left: 0.5rem;
                 text-shadow: 0 0 4px #394855;
+                font-size: calc(1.275rem + .3vw);
+                font-weight: 500;
+                line-height: 1.2;
             }
             
             .index_services__card-block__card__content__text { 
                 color: white;
                 padding-left: 0.5rem;
                 text-shadow: 0 0 4px #394855;
+                font-size: 1.25rem;
+                font-weight: 500;
+                line-height: 1.2;
             }
         }
 
@@ -245,7 +262,7 @@ $index-services-url: (
 
 .index_product_banner {
     height: 22rem;
-    color: #394855;
+    color: variables.$font-main-color;
     font-size: 28px;
     display: flex;
     flex-direction: column;

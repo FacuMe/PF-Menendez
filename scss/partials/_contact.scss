@@ -11,17 +11,17 @@
 .contact {
     .contact__title__content{
         color: variables.$secondary-color;
-        font-size: calc(1rem + 1vw);
+        font-size: calc(1.3rem + 1vw);
     }
     
     .contact__info__title {
         color: variables.$primary-color;
-        font-size: calc(1.5rem + 1vw);
+        font-size: calc(1.1rem + 1vw);
         letter-spacing: 0.05rem;
     }
     
     .contact__info__description {
-        color: #706e6e;
+        color: variables.$font-main-color;
         font-size: calc(0.7rem + 1vw);
 
         @media  screen and (min-width:variables.$media-size-small) {
@@ -76,12 +76,12 @@
 .contact_form {
     .contact_form__title {
         color: variables.$secondary-color;
-        font-size: calc(1rem + 1vw);
+        font-size: calc(1.3rem + 1vw);
     }
     
     .contact_form__inputs {
         .form-label, .form-check-label {
-            color:#706e6e;
+            color: variables.$font-main-color;
         }
 
         input, #textarea {
