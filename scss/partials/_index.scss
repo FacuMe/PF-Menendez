@@ -153,7 +153,7 @@ $index-services-url: (
 
         h2 {
             font-size: calc(1.8rem + 1vw);
-            letter-spacing: calc(0.1rem + 0.1vw);
+            letter-spacing: calc(0.001rem + 0.1vw);
 
             @media  screen and (min-width:variables.$media-size-small) {
                 font-size: calc(1.6rem + 1vw);
@@ -165,11 +165,10 @@ $index-services-url: (
         transition:0.5s;
         cursor:pointer;
 
-        &:hover{
+        &:active {
             transform: scale(1.05);
             box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
         }
-
         &::before, &::after {
             position: absolute;
             top: 0;
@@ -191,8 +190,15 @@ $index-services-url: (
             transform-origin: right bottom;
         }
 
-        &:hover::before, &:hover::after, &:focus::before, &:focus::after {
-            transform: scale3d(1, 1, 1);
+        @media screen and (min-width:variables.$media-size-medium) {
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+            }
+    
+            &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+                transform: scale3d(1, 1, 1);
+            }
         }
 
         .index_services__card-block__card__link {
