@@ -144,38 +144,38 @@
                 <div class="row justify-content-center">
                     <div class="col-md-7 col-lg-8 contact_form" id="contact-form">
                         <h2 class="pb-5 text-center contact_form__title">Si tenes <strong>dudas, consultas o sugerencias</strong> mandanos un mensaje</h2>
-                        <form type="submit" method="post" class="needs-validation" novalidate="">
+                        <form type="submit" action="https://formspree.io/f/mjvdaeye" method="post">
                             <div class="row g-3 justify-content-center contact_form__inputs">
                                 <div class="col-8 col-sm-4">
                                     <label for="name" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="name" placeholder="" value="" required="" autocomplete="off">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre de tu mascota" value="" autocomplete="off" maxlength="30" required>
                                     <div class="invalid-feedback">
                                         El nombre es requerido.
                                     </div>
                                 </div>
                                 <div class="col-8 col-sm-4">
                                     <label for="tel" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="tel" placeholder="" value="" required="" autocomplete="off">
+                                    <input type="tel" name="phone" class="form-control" id="tel" placeholder="Ej. 11-5555-5555" value="" autocomplete="off" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
                                     <div class="invalid-feedback">
                                         El número telefónico es requerido.
                                     </div>
                                 </div>
                                 <div class="col-8">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="" autocomplete="off">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Ej. milovet@example.com" autocomplete="off" maxlength="60" required>
                                     <div class="invalid-feedback">
                                         Ingresá una dirección de correo electrónico válida.
                                     </div>
                                 </div>
                                 <div class="col-8">
                                     <label for="textarea" class="form-label">Duda, consulta o sugerencia.</label>
-                                    <textarea class="form-control" id="textarea" rows="3" autocomplete="off"></textarea>
+                                    <textarea class="form-control" type="text" name="message" id="textarea" rows="3" placeholder="Escribe aquí tu mensaje" autocomplete="off" maxlength="255" required></textarea>
                                     <div class="invalid-feedback">
                                         Escribinos tu duda, consulta o sugerencia.
                                     </div>
                                 </div>
                                 <div class="col-8 form-check ms-4">
-                                    <input type="checkbox" class="form-check-input" id="save_info">
+                                    <input type="checkbox" name="news" class="form-check-input" id="save_info" value="yes">
                                     <label class="form-check-label" for="save-info">Quiero recibir novedades</label>
                                 </div>
                                 <div class="col-8 d-flex justify-content-center pb-5">
