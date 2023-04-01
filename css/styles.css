@@ -542,10 +542,17 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.index_services .index_services__bg {
   background-image: url(../img/index-service-background.webp);
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .index_services .index_services__overlay {
   background-color: #76c4f5;
