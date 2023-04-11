@@ -421,14 +421,14 @@ footer {
     }
     &:not(:checked) ~ .message-btn {
         background: variables.$secondary-color;
-        @media screen and (min-width:960px) {
-            &:hover {
-                background: #679dc6;
-                color: #fff;
-            }
-        }
         &:not(:active) {
             background: variables.$secondary-color;
+            @media screen and (min-width:960px) {
+                &:hover {
+                    background: #679dc6;
+                    color: #fff;
+                }
+            }
         }
         .message-btn__icon--open {
             @keyframes rotate-in-center-left {

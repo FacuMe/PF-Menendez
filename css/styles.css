@@ -403,14 +403,14 @@ footer .footer_info .footer_info__media-icons .footer_info__media-icons__icon:ho
 .checking:not(:checked) ~ .message-btn {
   background: #93c7ef;
 }
+.checking:not(:checked) ~ .message-btn:not(:active) {
+  background: #93c7ef;
+}
 @media screen and (min-width: 960px) {
-  .checking:not(:checked) ~ .message-btn:hover {
+  .checking:not(:checked) ~ .message-btn:not(:active):hover {
     background: #679dc6;
     color: #fff;
   }
-}
-.checking:not(:checked) ~ .message-btn:not(:active) {
-  background: #93c7ef;
 }
 @keyframes rotate-in-center-left {
   0% {
